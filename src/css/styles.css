@@ -1,0 +1,864 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lumanosino';
+    src: url('../fonts/Lumanosimo-Regular.ttf') format('truetype');
+}
+:root {
+    --color-one: #161426;
+    --color-two: #366273;
+    --color-three: #77c7d9;
+    --color-four: #94f2d7;
+    --color-five: #dbf2d8;
+    --color-six: #bef9f3;
+    --color-seven: #dcfff5;
+    --color-eight: #71c8c0;
+}
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0;
+}
+/* Header */
+.container > nav {
+    /*For Mobile Portrait*/
+    display: none; /*For Mobile Portrait*/
+}
+.container > img {
+    /*For Mobile Portrait*/
+    width: 2rem; /*For Mobile Portrait*/
+}
+header {
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: rgba(64, 115, 115, 0.87);
+    height: 10vh;
+    padding-top: 1.5rem;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /*For Mobile Portrait padding: 0 2rem*/
+}
+.container > nav > ul {
+    display: flex;
+    gap: 2rem;
+}
+.container > nav > ul > li > a {
+    color: white;
+}
+.container > nav > ul > li > a:hover {
+    color: var(--color-four);
+}
+.logo-container {
+    font-family: Chiller;
+    font-size: 2rem;
+    font-style: italic;
+}
+.logo-container > p {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.5rem; /*For Mobile Portrait*/
+}
+.logo {
+    font-family: Lumanosino;
+    font-weight: bolder;
+    background-color: var(--color-four);
+    color: green;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 0 10rem 0 10rem;
+    padding: 0.2rem;
+}
+#hire-me-btn-1 {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background-color: var(--color-four);
+    color: black;
+}
+#hire-me-btn-1:hover {
+    border: 2px solid aqua;
+    background-color: var(--color-six);
+    font-size: medium;
+}
+.current {
+    font-weight: bold;
+    border-bottom: 2px solid aqua;
+}
+
+/* Header End */
+
+/* Main */
+/* ---------- Section 1 --------- */
+.profile-intro {
+    background-image: url('../images/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+    color: black;
+    /* font-family: Verdana; */
+}
+.profile-intro > h3 {
+    width: 90%; /*For Mobile Portrait*/
+    font-weight: bolder;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgba(240, 248, 255, 0.233);
+    border-radius: 1rem;
+}
+#avatar-img {
+    margin-top: 2rem;
+    width: 12rem; /*For Mobile Portrait width: 15rem*/
+}
+.intro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#hire-me-btn-2,
+#my-portfolio-btn {
+    border-radius: 2rem;
+    border: 1px groove;
+    background-color: var(--color-four);
+    padding: 1rem;
+    font-weight: bold;
+    width: 30%; /*For Mobile Portrait width: 10rem*/
+}
+/* ---------------------- */
+
+/* ---------------- Section 2 ----------- */
+.my-biography {
+    background-color: var(--color-three);
+    padding: 1rem; /*For Mobile Portrait padding: 3rem;*/
+}
+.bio-container > div > h1,
+.bio-container > div > h3 {
+    margin: 0;
+}
+.bio-container {
+    background-color: var(--color-five);
+    font-family: Euphoria;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /*For Mobile Portrait*/
+    gap: 1rem; /*For Mobile Portrait gap: 2rem;*/
+}
+.bio-container > div > h3 {
+    font-weight: normal;
+    color: darkcyan;
+}
+.bio-container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.listen-biography > audio {
+    height: 2rem;
+}
+#bio-img {
+    align-self: center; /*For Mobile Portrait*/
+    width: 100%; /*For Mobile Portrait width: 18rem;*/
+    height: 30%; /*For Mobile Portrait*/
+}
+#learn-more-bio {
+    width: fit-content;
+}
+.listen-biography {
+    text-align: right;
+}
+
+/* ------------------------- */
+/* ------------ Section 3 ----------- */
+.what-I-do {
+    text-align: center;
+    background-color: var(--color-eight);
+    padding: 1rem;
+}
+.what-I-do > h1 {
+    margin-top: 0;
+    padding: 1rem; /*For Mobile Portrait padding: 2rem;*/
+}
+.service-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+.service-item {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    width: 90%; /*For Mobile Portrait width: 24rem*/
+    height: 30%; /*For Mobile Portrait height: 18rem*/
+}
+.service-item h2 {
+    margin: 0;
+}
+.service-item p {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+}
+.service-icon {
+    margin: 1rem 0;
+    width: 5rem;
+}
+.what-I-do > p {
+    padding: 2rem;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+/* ------------------------------ */
+
+/* ------------- Section 4 ----------------- */
+.achievement-stats {
+    background-color: var(--color-five);
+    text-align: center;
+    margin: 0;
+}
+#stats {
+    color: var(--color-one);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#stats > li {
+    width: 50%;
+}
+#stats h1 {
+    font-size: xx-large;
+    margin: 0;
+}
+
+/* ------------------------------ */
+
+/* ------------ Section 5 ------------------ */
+.recent-work {
+    background-color: var(--color-eight);
+    text-align: center;
+    padding: 2rem 0;
+}
+.recent-work > h1 {
+    font-size: xx-large;
+    padding-bottom: 2rem;
+}
+.recent-work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.work {
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 1rem;
+    width: 90%; /*For Mobile Portrait width: 45%;*/
+    height: 45%;
+}
+.work img {
+    width: 100%;
+}
+/* ------------------------------ */
+
+/* ----------- Section 6 ------------------- */
+.client-companies {
+    display: flex;
+    flex-wrap: wrap; /*For Mobile Portrait*/
+}
+.client-companies img {
+    width: 100%; /*For Mobile Portrait width: 50%;*/
+}
+
+/* ------------------------------ */
+
+/* ----------- Section 7 ------------------- */
+footer {
+    /* background-color: rgb(49, 122, 124); */
+    background-color: darkcyan;
+}
+footer img {
+    width: 1rem;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact > p {
+    align-self: center;
+    margin-bottom: 0;
+}
+.contact > address {
+    display: flex;
+    flex-wrap: wrap; /*For Mobile Portrait*/
+    align-items: center; /*For Mobile Portrait justify-content: center;*/
+    /*For Mobile Portrait gap: 2rem;*/
+}
+.contact > address > p {
+    /*For Mobile Portrait*/
+    width: 100%; /*For Mobile Portrait*/
+    text-align: center; /*For Mobile Portrait*/
+    margin: 0.4rem; /*For Mobile Portrait*/
+}
+.copyright-container {
+    font-weight: bold;
+    font-size: small; /*For Mobile Portrait*/
+    display: flex;
+    justify-content: space-between;
+}
+.social-links img {
+    width: 1rem; /*For Mobile Portrait width: 1.5rem*/
+    margin-right: 1rem;
+}
+#scroll-to-top {
+    /* display: none; For Mobile Portrait */
+    border: 1px solid blue;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: var(--color-four);
+}
+
+/* ------------------------------ */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: chocolate;
+    font-size: larger;
+}
+a:active {
+    color: brown;
+}
+a:focus {
+    color: blueviolet;
+}
+
+/* ==================================== About Page ================================================= */
+
+/* ----------------- Section 1 ----------------------- */
+.about-title-cover {
+    background-image: url('../images/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.about-title-cover > h1 {
+    align-self: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* ----------------------------------- */
+
+/* ----------------- Section 2 ----------------------- */
+.featured-skills {
+    background-color: var(--color-three);
+    padding: 1rem; /*For Mobile Portrait padding: 3rem;*/
+}
+.skills-container {
+    background-color: var(--color-five);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /*For Mobile Portrait*/
+    gap: 1rem; /*For Mobile Portrait*/
+}
+.skills-container > div > h3,
+.skills-container > div > h1 {
+    margin: 0;
+}
+.skills-container > div > h3 {
+    font-weight: normal;
+    color: darkcyan;
+}
+#full-bio-img {
+    width: 100%; /*For Mobile Portrait width: 18rem;*/
+    order: -1; /*For Mobile Portrait*/
+}
+.skills-container > div > img {
+    /*For Mobile Portrait*/
+    width: 100%; /*For Mobile Portrait*/
+}
+/* ------------------------------------- */
+
+/* -------------- Section 3 ----------------------- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--color-two);
+}
+.skills-grid > img {
+    align-self: center;
+    width: 25rem;
+}
+.skills-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    font-size: small; /*For Mobile Portrait*/
+}
+.skills-row-1,
+.skills-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*For Mobile Portrait gap: 2rem*/
+}
+.skills-grid-container > p {
+    align-self: center;
+    font-size: 1.5rem;
+}
+.skills-grid-container > p > a {
+    color: var(--color-five);
+}
+.skill-item {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 45%; /*For Mobile Portrait width: 24rem;*/
+    /* For Mobile Portrait height: 18rem; */
+}
+.skill-item img {
+    width: 5rem;
+}
+.skill-item > h2 {
+    margin: 0.5rem 0;
+}
+.skill-item p {
+    margin: 0;
+}
+
+/* ------------------------------------- */
+
+/* ----------------- Section 4 -------------------- */
+.resume-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; /*For Mobile Portrait padding: 2rem;*/
+    background-color: var(--color-five);
+}
+.resume-heading {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.resume-hero figure {
+    margin: 0;
+}
+/* ----------- Section 4.1 ------------------ */
+.education-exp {
+    background-color: var(--color-six);
+    padding: 2rem; /*For Mobile Portrait padding: 2rem;*/
+}
+.education-exp > div {
+    display: flex;
+    flex-direction: column; /*For Mobile Portrait*/
+    /*For Mobile Portrait gap: 2rem;*/
+}
+.education-exp > div > img {
+    width: 100%; /*For Mobile Portrait width: 18rem;*/
+}
+.education-exp > table {
+    border-collapse: collapse;
+    width: 50rem;
+}
+.education-exp th,
+.education-exp td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.education-exp th {
+    background-color: #f2f2f2;
+}
+/* ------------------------------------- */
+
+/* --------------- Section 4.2 upto 4.4 ---------------------- */
+/* --------------- Shared styles ---------------------- */
+.vha-hero {
+    margin-top: 2rem;
+}
+.vha-item-container {
+    display: flex;
+    flex-direction: column; /*For Mobile Portrait*/
+    align-items: center; /*For Mobile Portrait*/
+    /*For Mobile Portrait flex-wrap: wrap;*/
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: green;
+}
+.vha-item-container img {
+    width: 5rem;
+}
+.vha-item {
+    text-align: center;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    width: 24rem;
+    height: 19rem;
+    padding: 1rem;
+}
+.vha-item figure p {
+    margin: 0;
+    text-align: center;
+}
+/* ------------------------------------- */
+
+/* ----------------Section 4.2 --------------------- */
+.voluntary-container {
+    background-color: var(--color-eight);
+}
+
+/* ------------------------------------- */
+
+/* ----------------Section 4.3 --------------------- */
+.hobbies-container {
+    background-color: var(--color-three);
+}
+/* ------------------------------------- */
+
+/* ----------------Section 4.4 --------------------- */
+.achievement-container {
+    background-color: var(--color-eight);
+}
+
+/* ------------------------------------- */
+
+/* ---------------- End of Section 4 --------------------- */
+
+/* ------------------ Section 5 ------------------- */
+.office-tour {
+    background-color: var(--color-two);
+    color: var(--color-five);
+    padding: 2rem;
+}
+.office-tour > p {
+    padding: 0; /*For Mobile Portrait padding: 0 5rem;*/
+    text-align: center;
+}
+.video-and-navbar {
+    display: flex;
+    flex-direction: column; /*For Mobile Portrait*/
+    /*For Mobile Portrait flex-wrap: wrap;*/
+    justify-content: space-evenly;
+    gap: 1rem; /*For Mobile Portrait*/
+}
+.video-and-navbar > video {
+    width: 100%; /*For Mobile Portrait width: 40rem;*/
+    border-radius: 1rem;
+}
+.video-and-navbar > aside {
+    text-align: center;
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+    border-top: 1rem solid palegreen;
+    border-bottom: 1rem solid palegreen;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    box-shadow: 3px 3px 5px black;
+    width: 70%; /*For Mobile Portrait width: 15rem;*/
+    align-self: center; /*For Mobile Portrait*/
+}
+.video-and-navbar > aside > nav li {
+    line-height: 3rem;
+    font-size: 1.3rem; /*For Mobile Portrait*/
+}
+.video-and-navbar > aside > nav > ul > li a {
+    color: chocolate;
+}
+/* ------------------------------------- */
+
+/* --------------- Section 6 ---------------------- */
+.reviews > h1 {
+    font-size: 1rem;
+}
+.reviews {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--color-five);
+}
+.testimonials-container {
+    display: flex;
+    flex-direction: column; /*For Mobile Portrait*/
+    align-items: center; /*For Mobile Portrait*/
+    /*For Mobile Portrait flex-wrap: wrap; */
+    gap: 1rem;
+}
+.testimonials-container img {
+    width: 5rem;
+}
+.testimonial-item {
+    text-align: center;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    width: 24rem;
+    height: 18rem;
+    padding: 1rem;
+}
+.testimonial-id {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.avatar-name-occupation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.avatar-name-occupation > h2,
+.avatar-name-occupation > h4 {
+    text-align: left;
+    margin: 0;
+}
+.testimonials > p {
+    text-align: center;
+    font-size: 1rem;
+}
+/* ------------------------------------- */
+/* ================== End of About Page ================= */
+
+/* ================== Services Page ================= */
+/* ----------------- Section 1 ------------- */
+.services-title-cover {
+    background-image: url('../images/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.services-title-cover > h1 {
+    align-self: center;
+    font-size: 3rem;
+    margin: 0;
+}
+/* ---------------------------------- */
+/* Section 2 taken from home.html */
+/* ----------------- Section 3 ------------- */
+.innovative-solutions {
+    background-color: var(--color-five);
+    padding: 2rem;
+}
+.solutions-container {
+    display: flex;
+    flex-direction: column; /*For Mobile Portrait*/
+    align-items: center;
+    /*For Mobile Portrait flex-wrap: wrap;*/
+    justify-content: center;
+    gap: 1rem;
+}
+.solutions-container img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.solutions-container h2 {
+    margin: 1rem;
+}
+.solution-item {
+    /* text-align: center; */
+    border: 1px solid black;
+    background-color: var(--color-seven);
+    border-radius: 0.5rem;
+    width: 24rem;
+    height: 18rem;
+}
+/* --------------------------------------- */
+
+/* ================== End of Services Page ================= */
+
+/* ================== Pricing Page ================= */
+/* ---------------- Section 1 ------------------ */
+.pricing-title-cover {
+    background-image: url('../images/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.pricing-title-cover > h1 {
+    align-self: center;
+    font-size: 3rem;
+    margin: 0;
+}
+/* ---------------------------------- */
+
+/* -------------- Section 2 ----------------- */
+.pricing-intro {
+    text-align: center;
+    padding: 1rem;
+}
+/* ---------------------------------- */
+
+/* -------------- Section 3 ----------------- */
+.pricing-intro,
+.pricing-outro {
+    background-color: var(--color-seven);
+}
+.price-options-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-five);
+}
+.price-option {
+    display: flex;
+    flex-flow: column nowrap; /*For Mobile Portrait flex-flow: column wrap*/
+    border: 3px solid green;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 80%; /*For Mobile Portrait width: 18rem;*/
+    background-color: var(--color-seven);
+}
+.price-option > section {
+    text-align: center;
+}
+.price-option > section > h1 {
+    font-size: 2.5rem;
+    color: green;
+}
+.price-options-container ul > li::before {
+    content: '✔ ';
+    color: green;
+}
+.price-option li {
+    margin: 1rem;
+}
+.price-option a {
+    background-color: var(--color-six);
+    border: 1px solid var(--color-two);
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+.premium-pack {
+    background-color: lightgoldenrodyellow;
+}
+.premium-pack > section > h1 {
+    color: goldenrod;
+}
+
+/* ---------------------------------- */
+
+/* -------------- Section 4 ----------------- */
+.pricing-outro {
+    padding: 1rem;
+    text-align: center;
+}
+/* ---------------------------------- */
+/* ================== End of Pricing Page ================= */
+
+/* ================== Contact Page ================= */
+/* ----------------- Section 1 ----------- */
+.contact-title-cover {
+    background-image: url('../images/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-title-cover > h1 {
+    align-self: center;
+    font-size: 3rem;
+    margin: 0;
+}
+.contact-form {
+    background-color: var(--color-three);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.contact-form > h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.contact-form > form {
+    width: 90%; /*For Mobile Portrait width: 50rem;*/
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+.contact-form input,
+#country-code {
+    border-radius: 0.3rem;
+    height: 3rem;
+}
+.phone-num-box {
+    display: flex;
+    gap: 1rem;
+}
+.phone-num-box > input {
+    width: 100%;
+}
+.contact-form > form > textarea {
+    border-radius: 0.3rem;
+}
+.contact-form > form > [type='submit'] {
+    background-color: var(--color-four);
+    width: 30%;
+    align-self: center;
+}
+/* ---------------------------------------- */
+
+/* --------------- Section 2 ------------------ */
+.location-on-map {
+    padding: 2rem;
+    background-color: var(--color-five);
+    text-align: center;
+}
+.location-on-map > iframe {
+    width: 90%;
+}
+/* --------------------------------- */
+
+/* ================== End of Contact Page ================= */
