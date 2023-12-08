@@ -4,69 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
-            </div>
-            <img src="images/svg/menu.svg" alt="Menu">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li class="current"><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
+    <header class="header">
+        <div class="header__container">
+            <p class="logo-container"><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
+            <nav class="header__nav">
+                <img class="header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu">
+                <ul class="header__nav--ul">
+                    <li class="nav__ul-item"><a href="home.html">Home</a></li>
+                    <li class="nav__ul-item"><a href="about.html">About</a></li>
+                    <li class="nav__ul-item"><a href="services.html">Services</a></li>
+                    <li class="nav__ul-item"><a href="pricing.html">Pricing</a></li>
+                    <li class="nav__ul-item nav__ul-item--current"><a href="contact.html">Contact</a></li>
+                    <li class="nav__ul-item"><a class="btn" id="btn--hire-me" href="contact.html">Hire Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="contact-title-cover">
-            <h1>Contact</h1>
-        </section>
-        <section class="contact-form">
-            <h1>Want To Get In Touch?</h1>
-            <form>
-                <input type="text" placeholder="Full Name" autocapitalize="words" autofocus required>
-                <input type="email" placeholder="Email Address" required>
-                <div class="phone-num-box">
-                    <select name="country-code" id="country-code">
+        <h1 class="page--heading contact-page-title">Contact</h1>
+        <section class="contact__contact-form main__section">
+            <h1 class="section--heading">Want To Get In Touch?</h1>
+            <form class="contact__form">
+                <input class="contact-form__name" type="text" placeholder="Full Name" autocapitalize="words" autofocus required>
+                <input class="contact-form__email" type="email" placeholder="Email Address" required>
+                <div class="contact-form__phone-number-box">
+                    <select class="phone-number-box__code" name="country-code" id="country-code">
                         <option value="ethiopia">+251</option>
                         <option value="somalia">+252</option>
                         <option value="djibouti">+253</option>
                         <option value="eritrea">+291</option>
                     </select>
-                    <input type="tel" maxlength="9" required placeholder="Phone Number">
+                    <input class="phone-number-box__phone" type="tel" maxlength="9" required placeholder="Phone Number">
                 </div>
-                <textarea name="Message" cols="40" rows="10" placeholder="Message (optional)"></textarea>
-                <input type="submit">
+                <textarea class="contact-form__textarea" name="Message" cols="40" rows="10" placeholder="Message (optional)"></textarea>
+                <input class="btn contact-form__submit" type="submit">
             </form>
         </section>
-        <div class="location-on-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15760.946521333412!2d38.75165916423008!3d9.042166740914768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1700896297800!5m2!1sen!2set" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact__location-on-map main__section">
+            <iframe class="location-on-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15760.946521333412!2d38.75165916423008!3d9.042166740914768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1700896297800!5m2!1sen!2set" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
+    <footer class="footer">
+        <div class="inner-container footer__contact-container">
+            <p><a class="logo" href="home.html">Hamdi M.</a></p>
+            <address class="contact-container__address">
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
             </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">🔼</span></a>
+            <div class="contact-container__copyright-socials">
+                <p class="copyright-socials__copyright">&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
+                <div class="copyright-socials__socials">
+                    <a class="socials-item" href="https://github.com/hmyunis"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/github.svg" alt="Github"></a>
+                    <a class="socials-item" href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/linkedin.svg" alt="LinkedIn"></a>
+                    <a class="socials-item" href="https://t.me/Hamdi00"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/telegram.svg" alt="Telegram"></a>
+                    <a class="socials-item btn" href="#">🔼</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,792 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lumanosino';
+    src: url('../fonts/Lumanosimo-Regular.ttf') format('truetype');
+}
+:root {
+    --color-one: #161426;
+    --color-two: #366273;
+    --color-three: #77c7d9;
+    --color-four: #94f2d7;
+    --color-five: #dbf2d8;
+    --color-six: #bef9f3;
+    --color-seven: #dcfff5;
+    --color-eight: #71c8c0;
+    --color-nine: #008000;
+    --color-ten: #ffffff;
+    --color-eleven: #00ced1;
+}
+* {
+    font-family: Poppins;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* ------------- Pseudo Classes ------------ */
+a:hover {
+    font-size: larger;
+}
+a:focus,
+a:active {
+    color: var(--color-two);
+}
+/* ----------------------------------- */
+a {
+    color: var(--color-eleven);
+}
+img {
+    max-width: 100%;
+}
+/* ------------ Reusable Components ----------- */
+.btn {
+    background-color: var(--color-four);
+    padding: 0.5em;
+    border-radius: 2em;
+}
+.inner-container {
+    padding: 1rem;
+    box-shadow: 3px 3px 5px var(--color-one);
+}
+.main__section {
+    padding: 2rem;
+}
+.page--heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    height: 20vh;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.section--heading {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.card {
+    border: 1px solid var(--color-one);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 24rem;
+    height: 18rem;
+    margin-bottom: 1rem;
+}
+.card-icon {
+    width: 5rem;
+}
+.card-p {
+    margin: 0.5rem 0;
+}
+.fw-bold {
+    font-weight: bold;
+    color: var(--color-one);
+}
+.svg-icon {
+    width: 1.5rem;
+}
+/* ----------------------------------- */
+/* ========== Header ============= */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(64, 115, 115, 0.87);
+}
+.header__container {
+    color: var(--color-ten);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+    height: 10vh;
+}
+.logo-container {
+    font-size: 2rem;
+    font-style: italic;
+}
+.logo {
+    font-family: Lumanosino;
+    font-weight: bolder;
+    background-color: var(--color-four);
+    color: var(--color-nine);
+    border: 1px solid var(--color-one);
+    box-shadow: 2px 2px 5px var(--color-one);
+    border-radius: 0 10rem 0 10rem;
+    padding: 0.2em;
+}
+.header__menu-icon {
+    display: none;
+    width: 2.5rem;
+}
+.header__nav--ul {
+    display: flex;
+    gap: 2rem;
+}
+.nav__ul-item a {
+    color: var(--color-ten);
+}
+.nav__ul-item--current {
+    font-size: larger;
+    border-bottom: 2px solid var(--color-seven);
+}
+.nav__ul-item--current a {
+    color: var(--color-four);
+}
+#btn--hire-me {
+    color: var(--color-one);
+}
+
+/* ================================= */
+
+/* =============== Main ================== */
+/* Section 1 - profile-intro */
+.profile-intro {
+    background-image: url('../images/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+    color: var(--color-one);
+}
+.profile-intro__h3 {
+    width: 90%;
+    font-weight: bolder;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgba(240, 255, 247, 0.3);
+    border-radius: 1rem;
+}
+.profile-intro__avatar-img {
+    margin-top: 2rem;
+    width: 20%;
+}
+.profile-intro__intro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn--connect,
+.btn--my-portfolio {
+    background-color: var(--color-four);
+    color: var(--color-nine);
+    border: 1px groove;
+    font-weight: bold;
+    padding: 1rem;
+    width: 20vw;
+}
+/* ---------------------- */
+/* Section 2 - profile-intro */
+.my-biography {
+    background-color: var(--color-three);
+}
+.my-biography__container {
+    background-color: var(--color-five);
+    overflow: hidden;
+}
+.my-biography__bio-img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+.text-content__h3 {
+    font-weight: normal;
+    color: var(--color-three);
+}
+.text-content__p {
+    margin: 0.5rem 0;
+}
+.text-content__listen-biography {
+    text-align: right;
+}
+.listen-biography__audio {
+    height: 2rem;
+}
+
+/* ---------------------- */
+/* Section 3 - what-I-do */
+.what-I-do {
+    background-color: var(--color-eight);
+}
+.what-I-do__services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.services__service-item {
+    background-color: var(--color-five);
+    text-align: center;
+}
+.what-I-do__p {
+    text-align: center;
+    margin: 1rem 0;
+}
+/* ---------------------- */
+/* Section 4 - achievement-stats */
+.achievement-stats {
+    background-color: var(--color-five);
+}
+.achievement-stats__ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    text-align: center;
+}
+.achievement-stats__ul-item {
+    font-size: larger;
+}
+/* ---------------------- */
+/* Section 5 - portfolio */
+.portfolio {
+    background-color: var(--color-eight);
+}
+.portfolio__h1 {
+    margin: 2rem 0;
+}
+.portfolio__recent-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.recent-works__work-item {
+    border: 1px groove var(--color-one);
+    border-radius: 1rem;
+    background-color: var(--color-six);
+    padding: 2rem;
+}
+.work-item__figure--img {
+    max-width: 100%;
+}
+/* ---------------------- */
+/* ------- Div 6 client-companies --------------- */
+.client-companies {
+    display: flex;
+}
+.client-companies__img {
+    width: 50%;
+}
+/* ---------------------- */
+/* ================================= */
+
+/* ============= Footer ==================== */
+.footer {
+    background-color: var(--color-two);
+    text-align: center;
+    color: var(--color-seven);
+}
+.footer__contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-container__address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.address__contact-detail-item a {
+    color: var(--color-six);
+}
+.contact-container__copyright-socials {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright-socials__socials {
+    display: flex;
+    gap: 1rem;
+}
+/* ================================= */
+
+/* ============= About Page ==================== */
+/* ------------- Section 1 - featured-skills ----------- */
+.featured-skills {
+    background-color: var(--color-three);
+}
+.featured-skills__container {
+    background-color: var(--color-five);
+    display: flex;
+    gap: 1rem;
+}
+.skills__text-content--h3 {
+    color: var(--color-three);
+}
+.skills__text-content--p {
+    margin: 1rem 0;
+}
+/* ------------------------------- */
+
+/* ------------- Section 2 - skills-grid --------------- */
+.skills-grid {
+    background-color: var(--color-two);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.skills-grid__container {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    column-gap: 1rem;
+}
+.skill-item {
+    background-color: var(--color-seven);
+}
+.skills-grid__p {
+    text-align: center;
+    width: 100%;
+}
+/* ------------------------------- */
+/* ------------- Section 3 - resume --------------- */
+.resume {
+    background-color: var(--color-five);
+    display: flex;
+    flex-direction: column;
+}
+/* ----------- Section 3.1 - resume__education-exp ----- */
+.resume__education-exp {
+    background-color: var(--color-six);
+}
+.education-exp__container {
+    display: flex;
+    gap: 1rem;
+}
+.education-exp__text-content--p {
+    margin: 1rem 0;
+}
+.education-exp__text-content--table {
+    border-collapse: collapse;
+    max-width: 100%;
+}
+.education-exp__text-content--table th,
+.education-exp__text-content--table td {
+    border: 2px solid var(--color-two);
+    text-align: left;
+    padding: 0.5rem;
+}
+.education-exp__text-content--table th {
+    background-color: var(--color-seven);
+}
+/* -------- Shared among 3.2, 3.3 and 3.4 -------- */
+.voluntary-activities,
+.hobbies,
+.achievements {
+    margin: 2rem 0;
+    box-shadow: 3px 3px 5px var(--color-one);
+}
+.voluntary-activities__container,
+.hobbies__container,
+.achievements__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.voluntary-activities-item,
+.hobbies-item,
+.achievement-item {
+    background-color: var(--color-seven);
+    text-align: center;
+}
+.voluntary-activities-item__img,
+.hobbies-item__img,
+.achievement-item__achievement-icon {
+    margin: 0.5rem;
+}
+/* -------------------------------------- */
+
+/* -------------- Section 3.2 voluntary-activities ----------------- */
+.voluntary-activities {
+    background-color: var(--color-eight);
+}
+/* ------------------------------- */
+
+/* ------------ Section 3.3 hobbies ------------------- */
+.hobbies {
+    background-color: var(--color-three);
+}
+/* ------------------------------- */
+
+/* ------------- Section 3.4 achievements ------------------ */
+.achievements {
+    background-color: var(--color-eight);
+}
+/* ------------------------------- */
+
+/* ------------- Section 4 - office-tour --------------- */
+.office-tour {
+    background-color: var(--color-two);
+    color: var(--color-five);
+    display: flex;
+    flex-direction: column;
+}
+.office-tour__p {
+    text-align: center;
+    padding: 1rem 5rem;
+}
+.office-tour__video-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.video-navigation__video {
+    width: 40rem;
+    border-radius: 1rem;
+}
+.video-navigation__navigation {
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+    border-top: 1rem solid var(--color-four);
+    border-bottom: 1rem solid var(--color-four);
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    box-shadow: 3px 3px 5px black;
+    text-align: center;
+    align-self: center;
+    padding: 2rem;
+}
+.navigation__ul-item {
+    line-height: 3rem;
+}
+
+/* -------------- Section 6 - reviews ----------------- */
+.reviews {
+    background-color: var(--color-five);
+}
+.testimonials__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.testimonial-item {
+    background-color: var(--color-seven);
+}
+.item__testimonial-id {
+    display: flex;
+    gap: 1rem;
+}
+.testimonial-id__name-occupation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testimonial-item__blockquote {
+    text-align: center;
+}
+.blockquote__p--quote {
+    margin: 1.5rem 0;
+}
+.reviews__testimonials--p {
+    text-align: center;
+    margin: 1rem 0;
+}
+/* ------------------------------- */
+/* ================================= */
+
+/* =============== Services Page ================== */
+.innovative-solutions {
+    background-color: var(--color-five);
+}
+.innovative-solutions__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.solution-item {
+    background-color: var(--color-seven);
+    border-radius: 0.5rem;
+    padding: 0;
+}
+.solution-item__img {
+    max-width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.solution-item__h2 {
+    margin: 1rem;
+}
+/* ================================= */
+
+/* =============== Pricing Page ================== */
+.pricing-intro--p,
+.pricing-outro--p {
+    background-color: var(--color-five);
+    text-align: center;
+    padding: 3rem;
+}
+.pricing-options__container {
+    background-color: var(--color-five);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.price-option-item {
+    background-color: var(--color-seven);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--color-nine);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 18rem;
+    box-shadow: 3px 3px 5px var(--color-one);
+}
+.pricing-options__premium-pack {
+    border: 3px solid gold;
+}
+.item--headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.item--headings__h1 {
+    font-size: 2.5rem;
+    color: var(--color-nine);
+}
+.premium-pack__h1 {
+    color: goldenrod;
+}
+.item__deliverables--ul {
+    margin: 1rem 0;
+}
+.deliverable-item::before {
+    content: '✔ ';
+    color: var(--color-nine);
+}
+.deliverable-item {
+    margin: 1rem;
+}
+.item__get-started {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px ridge var(--color-nine);
+}
+/* ================================= */
+
+/* =============== Contact Page ================== */
+.contact__contact-form {
+    background-color: var(--color-three);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.contact__form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    width: 80%;
+}
+.contact-form__name,
+.contact-form__email,
+.phone-number-box__phone,
+.phone-number-box__code {
+    border-radius: 0.3rem;
+    height: 3rem;
+    font-size: larger;
+}
+.contact-form__phone-number-box {
+    display: flex;
+    gap: 1rem;
+}
+.phone-number-box__phone {
+    width: 100%;
+}
+.contact-form__textarea {
+    border-radius: 0.3rem;
+    font-size: larger;
+}
+.contact-form__submit {
+    font-size: larger;
+    width: 30%;
+    padding: 1rem;
+    align-self: center;
+}
+.contact__location-on-map {
+    background-color: var(--color-five);
+    text-align: center;
+}
+.location-on-map__iframe {
+    width: 90%;
+}
+/* ================================= */
+
+/* ============== Media Queries =================== */
+@media (max-width: 1280px) {
+    html {
+        font-size: 14px;
+    }
+    .main__section {
+        padding: 1rem;
+    }
+    #btn--hire-me {
+        display: none;
+    }
+    .logo-container {
+        font-size: 1rem;
+    }
+    .header__container {
+        height: 8vh;
+    }
+    .profile-intro {
+        height: 92vh;
+    }
+    .footer {
+        font-size: smaller;
+    }
+    /* ----- About Page -------- */
+    .skills-grid__img {
+        display: none;
+    }
+    .skill-item {
+        width: 100%;
+    }
+    .voluntary-activities-item,
+    .hobbies-item,
+    .achievement-item {
+        font-size: x-small;
+        width: 20rem;
+        height: 14rem;
+    }
+    .voluntary-activities-item__img,
+    .hobbies-item__img,
+    .achievement-item__achievement-icon {
+        margin: 0rem;
+    }
+    /* ------ Pricing Page ------ */
+    .price-option-item {
+        width: 20rem;
+        margin: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .header__container {
+        height: 10vh;
+    }
+    .profile-intro {
+        height: 60vh;
+    }
+    /* ----- About Page -------- */
+    .video-navigation__video {
+        width: 30rem;
+        align-self: center;
+    }
+    /* ---------- Services Page ------- */
+    .services__service-item {
+        width: 20rem;
+        height: 19rem;
+    }
+}
+@media (max-height: 400px) {
+    .profile-intro {
+        height: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .page--heading {
+        height: 15vh;
+    }
+    .header__menu-icon {
+        display: block;
+    }
+    .header__nav--ul {
+        display: none;
+    }
+    .header__container {
+        height: 5vh;
+    }
+    .profile-intro__avatar-img {
+        width: 40%;
+    }
+    .btn--connect,
+    .btn--my-portfolio {
+        width: 40vw;
+    }
+    .profile-intro {
+        height: 70vh;
+    }
+    .my-biography__bio-img {
+        float: none;
+        width: 100%;
+    }
+    .my-biography__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 90%;
+    }
+    .achievement-stats__ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .portfolio__recent-works {
+        grid-template-columns: 1fr;
+    }
+    .client-companies {
+        flex-direction: column;
+    }
+    .client-companies__img {
+        width: 100%;
+    }
+    .contact-container__address {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 1rem;
+    }
+    .contact-container__copyright-socials {
+        font-size: x-small;
+    }
+    .featured-skills__container {
+        flex-direction: column;
+    }
+    .featured-skills__full-bio-img {
+        order: -1;
+    }
+    .skills-grid__img {
+        display: block;
+    }
+    .skill-item {
+        width: 100%;
+        height: fit-content;
+    }
+    .education-exp__container {
+        flex-direction: column;
+    }
+    .office-tour__p {
+        padding: 1rem;
+    }
+    .office-tour__video-navigation {
+        flex-direction: column;
+    }
+    .video-navigation__video {
+        width: 95%;
+    }
+    .services__service-item {
+        width: 90%;
+        height: auto;
+    }
+    .pricing-intro--p,
+    .pricing-outro--p {
+        padding: 1rem;
+    }
+    .pricing-options__container {
+        background-color: var(--color-eight);
+    }
+    .contact-form__submit {
+        width: 50%;
+    }
+}
+/* ================================= */

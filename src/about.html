@@ -4,102 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
-            </div>
-            <img src="images/svg/menu.svg" alt="Menu">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li class="current"><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
+    <header class="header">
+        <div class="header__container">
+            <p class="logo-container"><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
+            <nav class="header__nav">
+                <img class="header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu">
+                <ul class="header__nav--ul">
+                    <li class="nav__ul-item"><a href="home.html">Home</a></li>
+                    <li class="nav__ul-item nav__ul-item--current"><a href="about.html">About</a></li>
+                    <li class="nav__ul-item"><a href="services.html">Services</a></li>
+                    <li class="nav__ul-item"><a href="pricing.html">Pricing</a></li>
+                    <li class="nav__ul-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav__ul-item"><a class="btn" id="btn--hire-me" href="contact.html">Hire Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="about-title-cover">
-            <h1>About Me</h1>
-        </section>
-        <section class="my-biography">
-            <div class="bio-container">
-                <img id="bio-img" src="images/bio-photo.png" alt="My Photo">
-                <div>
-                    <h3>My Biography</h3>
-                    <h1>An Undergrad UI Designer & Web Developer Based in Ethiopia</h1>
-                    <p>Greetings! I'm Hamdi Mohammed, a fervent student, immersed in the worlds of UI design and web development. Currently pursuing my Software Engineering degree at Addis Ababa University, my journey is defined by a commitment to fuse creativity and technology into impactful digital experiences. My passion ignited during early academic years, and through comprehensive coursework, I've cultivated skills spanning both the aesthetic and technical dimensions of UI design and web development. A believer in the transformative power of design, I am dedicated to crafting interfaces that not only captivate visually but also deliver seamless, user-centric interactions.</p>
-                    <p>In the dynamic landscape of design, I draw inspiration from diverse sources, translating it into visually stunning and functionally robust interfaces. On the development front, my focus lies in the creation of clean and efficient code, translating design concepts into functional and responsive websites. My attention to detail ensures that every pixel serves a purpose, aligning with the overarching vision of a project. This meticulous approach results in digital experiences that seamlessly merge form and function, fostering a sense of connection and usability.</p>
-                    <p>Beyond the academic realm, I actively seek and thrive in opportunities to apply my skills to real-world projects. This hands-on experience has not only expanded my technical proficiency but also cultivated a profound appreciation for collaboration and innovative problem-solving. Engaging in diverse projects has equipped me with the ability to think critically and push the boundaries of my capabilities, contributing to a robust skill set that I bring to every endeavor.</p>
-                    <p>In the ever-evolving tech landscape, my commitment to staying curious and adaptable defines my approach. Each project becomes an opportunity not just to showcase my current skill set but also to embrace continuous learning. Whether it's mastering a new framework or experimenting with design trends, I thrive on the excitement of pushing my own boundaries and evolving alongside the digital frontier.</p>
-                    <p>My design philosophy is not just about creating visually appealing interfaces but also about fostering a sense of connection. I believe that every click, scroll, or interaction should feel intuitive and purposeful. User feedback becomes a valuable compass, guiding refinements and improvements. The iterative nature of design allows me to enhance user experiences progressively, ensuring that each project is a step forward in the pursuit of excellence.</p>
-                    <p>Collaboration sits at the core of my professional ethos. I value the diversity of perspectives that collaboration brings, whether it's with fellow designers, developers, or clients. Through effective communication and teamwork, I've witnessed the transformative power of collective creativity. Collaborative efforts not only elevate the quality of the end product but also contribute to a rich and rewarding professional journey.</p>
-                    <p>As I navigate through this dynamic intersection of design and development, I invite you to explore the portfolio that encapsulates my creative endeavors. Each project is a chapter in a story of growth, innovation, and a relentless pursuit of excellence. Your presence on this journey is not just appreciated; it's an integral part of the narrative that propels me forward.</p>
-                    <div class="listen-biography">
-                        <label>Listen to the article🔉</label>
-                        <audio src="media/full-bio-audio.mp3" controls muted></audio>
+        <h1 class="page--heading about-page-title">About Me</h1>
+        <section class="my-biography main__section" id="my-biography">
+            <div class="inner-container my-biography__container">
+                <hgroup class="my-biography__text-content">
+                    <img class="my-biography__bio-img" src="assets/images/bio-photo.png" alt="My Photo">
+                    <h3 class="text-content__h3">My Biography</h3>
+                    <h1 class="text-content__h1">An Undergrad UI Designer & Web Developer Based in Ethiopia</h1>
+                    <p class="text-content__p">Greetings! I'm Hamdi Mohammed, a fervent student, immersed in the worlds of UI design and web development. Currently pursuing my Software Engineering degree at Addis Ababa University, my journey is defined by a commitment to fuse creativity and technology into impactful digital experiences. My passion ignited during early academic years, and through comprehensive coursework, I've cultivated skills spanning both the aesthetic and technical dimensions of UI design and web development. A believer in the transformative power of design, I am dedicated to crafting interfaces that not only captivate visually but also deliver seamless, user-centric interactions.</p>
+                    <p class="text-content__p">In the dynamic landscape of design, I draw inspiration from diverse sources, translating it into visually stunning and functionally robust interfaces. On the development front, my focus lies in the creation of clean and efficient code, translating design concepts into functional and responsive websites. My attention to detail ensures that every pixel serves a purpose, aligning with the overarching vision of a project. This meticulous approach results in digital experiences that seamlessly merge form and function, fostering a sense of connection and usability.</p>
+                    <p class="text-content__p">Beyond the academic realm, I actively seek and thrive in opportunities to apply my skills to real-world projects. This hands-on experience has not only expanded my technical proficiency but also cultivated a profound appreciation for collaboration and innovative problem-solving. Engaging in diverse projects has equipped me with the ability to think critically and push the boundaries of my capabilities, contributing to a robust skill set that I bring to every endeavor.</p>
+                    <p class="text-content__p">In the ever-evolving tech landscape, my commitment to staying curious and adaptable defines my approach. Each project becomes an opportunity not just to showcase my current skill set but also to embrace continuous learning. Whether it's mastering a new framework or experimenting with design trends, I thrive on the excitement of pushing my own boundaries and evolving alongside the digital frontier.</p>
+                    <p class="text-content__p">My design philosophy is not just about creating visually appealing interfaces but also about fostering a sense of connection. I believe that every click, scroll, or interaction should feel intuitive and purposeful. User feedback becomes a valuable compass, guiding refinements and improvements. The iterative nature of design allows me to enhance user experiences progressively, ensuring that each project is a step forward in the pursuit of excellence.</p>
+                    <p class="text-content__p">Collaboration sits at the core of my professional ethos. I value the diversity of perspectives that collaboration brings, whether it's with fellow designers, developers, or clients. Through effective communication and teamwork, I've witnessed the transformative power of collective creativity. Collaborative efforts not only elevate the quality of the end product but also contribute to a rich and rewarding professional journey.</p>
+                    <p class="text-content__p">As I navigate through this dynamic intersection of design and development, I invite you to explore the portfolio that encapsulates my creative endeavors. Each project is a chapter in a story of growth, innovation, and a relentless pursuit of excellence. Your presence on this journey is not just appreciated; it's an integral part of the narrative that propels me forward.</p>
+                    <div class="text-content__listen-biography">
+                        <label class="listen-biography__label">Listen to the article🔉</label>
+                        <audio class="listen-biography__audio" src="assets/media/bio-audio.mp3" controls muted></audio>
                     </div>
-                </div>
+                </hgroup>
             </div>
         </section>
-        <section class="featured-skills">
-            <div class="skills-container">
-                <div>
-                    <h3>My Skills</h3>
-                    <h1>My Featured Skills</h1>
-                    <p>I specialize in creating visually stunning and user-friendly websites, seamlessly blending UI design with web development. My skills encompass responsive design, front-end technologies, and a keen eye for detail. Let's elevate your digital presence with innovation and expertise.</p>
-                    <img src="images/skill-levels.png" alt="My Skill Levels">
+        <section class="featured-skills main__section" id="featured-skills">
+            <div class="inner-container featured-skills__container">
+                <div class="featured-skills__text-content">
+                    <h3 class="skills__text-content--h3">My Skills</h3>
+                    <h1 class="skills__text-content--h1">My Featured Skills</h1>
+                    <p class="skills__text-content--p">I specialize in creating visually stunning and user-friendly websites, seamlessly blending UI design with web development. My skills encompass responsive design, front-end technologies, and a keen eye for detail. Let's elevate your digital presence with innovation and expertise.</p>
+                    <img class="skills__text-content--img" src="assets/images/skill-levels.png" alt="My Skill Levels">
                 </div>
-                <img id="full-bio-img" src="images/bio-photo.png" alt="My Photo">
+                <img class="featured-skills__full-bio-img" src="assets/images/bio-photo.png" alt="My Photo">
             </div>
         </section>
-        <div class="skills-grid">
-            <img src="images/bio-photo.png" alt="My Photo">
-            <section class="skills-grid-container">
-                <div class="skills-row-1">
-                    <div class="skill-item">
-                        <img src="images/web-dev-icon-2.png" alt="Web Development">
-                        <h2>Web Development</h2>
-                        <p>I meticulously craft dynamic and responsive websites. Leveraging a proficiency in HTML, CSS, and JavaScript, I bring ideas to life with clean code and seamless functionality. Every project reflects my commitment to precision and user-centric design.</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/analysis-icon.png" alt="Research Analysis">
-                        <h2>Research Analysis</h2>
-                        <p>Expert in research analysis, I delve deep into user behavior and market trends to inform strategic decisions. By translating insights into actionable solutions, I ensure that each web project is tailored to meet both user expectations and business objectives.</p>
-                    </div>
+        <section class="skills-grid main__section">
+            <img class="skills-grid__img" src="assets/images/bio-photo.png" alt="My Photo">
+            <div class="skills-grid__container">
+                <div class="card skill-item">
+                    <img class="card-icon skill-item__icon" src="assets/images/web-dev-icon-2.png" alt="Web Development">
+                    <h2 class="skill-item__h2">Web Development</h2>
+                    <p class="card-p skill-item__p">I meticulously craft dynamic and responsive websites. Leveraging a proficiency in HTML, CSS, and JavaScript, I bring ideas to life with clean code and seamless functionality. Every project reflects my commitment to precision and user-centric design.</p>
                 </div>
-                <div class="skills-row-2">
-                    <div class="skill-item">
-                        <img src="images/responsive-icon.png" alt="Responsive Design">
-                        <h2>Responsive Design</h2>
-                        <p>Specializing in responsive design, I create websites that adapt seamlessly across devices. Utilizing CSS media queries and flexible grids, my designs ensure a consistent and optimal user experience, irrespective of the device, screen size, or orientation.</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/design-trends-icon.png" alt="Design Trends">
-                        <h2>Design Trends</h2>
-                        <p>At the forefront of design trends, I infuse projects with the latest visual aesthetics and user experience principles. From innovative layouts to contemporary elements, I bring a keen understanding of design trends to create modern, engaging, and impactful digital experiences.</p>
-                    </div>
+                <div class="card skill-item">
+                    <img class="card-icon skill-item__icon" src="assets/images/analysis-icon.png" alt="Research Analysis">
+                    <h2 class="skill-item__h2">Research Analysis</h2>
+                    <p class="card-p skill-item__p">Expert in research analysis, I delve deep into user behavior and market trends to inform strategic decisions. By translating insights into actionable solutions, I ensure that each web project is tailored to meet both user expectations and business objectives.</p>
                 </div>
-                <p><a href="home.html#portfolio-section">View Projects ➡</a></p>
-            </section>
-        </div>
-        <section class="resume-hero">
-            <h2 class="resume-heading">Resume / CV</h2>
-            <section class="education-exp">
-                <h2 class="resume-heading">Education and Experience</h2>
-                <div>
-                    <img src="images/bio-photo.png" alt="My Photo">
-                    <div>
-                        <p>Currently pursuing a Bachelor's degree in Software Engineering at Addis Ababa University, I am a dedicated third-year student with a commitment to academic excellence. My coursework delves into cutting-edge technologies, laying a robust foundation for my future as a proficient and innovative software engineer.</p>
-                        <table>
+                <div class="card skill-item">
+                    <img class="card-icon skill-item__icon" src="assets/images/responsive-icon.png" alt="Responsive Design">
+                    <h2 class="skill-item__h2">Responsive Design</h2>
+                    <p class="card-p skill-item__p">Specializing in responsive design, I create websites that adapt seamlessly across devices. Utilizing CSS media queries and flexible grids, my designs ensure a consistent and optimal user experience, irrespective of the device, screen size, or orientation.</p>
+                </div>
+                <div class="card skill-item">
+                    <img class="card-icon skill-item__icon" src="assets/images/design-trends-icon.png" alt="Design Trends">
+                    <h2 class="skill-item__h2">Design Trends</h2>
+                    <p class="card-p skill-item__p">At the forefront of design trends, I infuse projects with the latest visual aesthetics and user experience principles. From innovative layouts to contemporary elements, I bring a keen understanding of design trends to create modern, engaging, and impactful digital experiences.</p>
+                </div>
+            </div>
+            <p class="skills-grid__p"><a class="learn-more" href="home.html#my-portfolio">View Projects ➡</a></p>
+        </section>
+        <section class="resume main__section" id="resume">
+            <h2 class="section--heading resume__h2">Resume / CV</h2>
+            <section class="inner-container resume__education-exp">
+                <h2 class="section--heading">Education and Experience</h2>
+                <div class="education-exp__container">
+                    <img class="education-exp__img" src="assets/images/bio-photo.png" alt="My Photo">
+                    <div class="education-exp__text-content">
+                        <p class="education-exp__text-content--p">Currently pursuing a Bachelor's degree in Software Engineering at Addis Ababa University, I am a dedicated third-year student with a commitment to academic excellence. My coursework delves into cutting-edge technologies, laying a robust foundation for my future as a proficient and innovative software engineer.</p>
+                        <table class="education-exp__text-content--table">
                             <tr>
                                 <th>Category</th>
                                 <th>Description</th>
@@ -136,191 +128,154 @@
                                 <td>Collaborated on cutting-edge projects, contributing to the development of innovative solutions in a dynamic team environment.</td>
                             </tr>
                         </table>
-                        <p>In conclusion, my academic trajectory at Addis Ababa University in Software Engineering is complemented by a transformative Software Development Internship at InnovateTech Solutions. As a dedicated third-year student, I have cultivated a solid foundation in theoretical concepts, enriched by hands-on experience in a dynamic professional setting. At InnovateTech Solutions, I actively contributed to cutting-edge projects, refining my skills in collaborative problem-solving and fostering a passion for innovation. This fusion of academic rigor and practical insights positions me as a versatile and forward-thinking individual, poised to make impactful contributions in the dynamic realm of software engineering.</p>
+                        <p class="education-exp__text-content--p">In conclusion, my academic trajectory at Addis Ababa University in Software Engineering is complemented by a transformative Software Development Internship at InnovateTech Solutions. As a dedicated third-year student, I have cultivated a solid foundation in theoretical concepts, enriched by hands-on experience in a dynamic professional setting. At InnovateTech Solutions, I actively contributed to cutting-edge projects, refining my skills in collaborative problem-solving and fostering a passion for innovation. This fusion of academic rigor and practical insights positions me as a versatile and forward-thinking individual, poised to make impactful contributions in the dynamic realm of software engineering.</p>
                     </div>
                 </div>
             </section>
-            <section class="vha-hero voluntary-hero">
-                <h2 class="resume-heading">Voluntary Activities</h2>
-                <div class="vha-item-container voluntary-container">
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/comm-volunteering.png" alt="Community Volunteering">
-                            <figcaption>
-                                <h3>Community Volunteering</h3>
-                                <p>Dedicated to community service, I actively engage in local volunteering initiatives. By contributing time and skills, I foster positive change and social cohesion, enriching lives and creating a sense of community unity.</p>
-                            </figcaption>
-                        </figure>
+            <section class="voluntary-activities main__section">
+                <h2 class="section--heading voluntary-activities__h2">Voluntary Activities</h2>
+                <div class="voluntary-activities__container">
+                    <div class="card voluntary-activities-item">
+                        <img class="card-icon voluntary-activities-item__img" src="assets/images/comm-volunteering.png" alt="Community Volunteering">
+                        <h2 class="voluntary-activities-item__h2">Community Volunteering</h2>
+                        <p class="card-p voluntary-activities-item__p">Dedicated to community service, I actively engage in local volunteering initiatives. By contributing time and skills, I foster positive change and social cohesion, enriching lives and creating a sense of community unity.</p>
                     </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/mentorship.png" alt="Mentorship">
-                            <figcaption>
-                                <h3>Mentorship Programs</h3>
-                                <p>As a mentor, I guide aspiring individuals in their professional and personal development journeys. Sharing insights, offering advice, and providing support, I empower mentees to navigate challenges and achieve their goals.</p>
-                            </figcaption>
-                        </figure>
+                    <div class="card voluntary-activities-item">
+                        <img class="card-icon voluntary-activities-item__img" src="assets/images/mentorship.png" alt="Mentorship">
+                        <h2 class="voluntary-activities-item__h2">Mentorship Programs</h2>
+                        <p class="card-p voluntary-activities-item__p">As a mentor, I guide aspiring individuals in their professional and personal development journeys. Sharing insights, offering advice, and providing support, I empower mentees to navigate challenges and achieve their goals.</p>
                     </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/envirnoment.png" alt="Envirnonmental Advocacy">
-                            <figcaption>
-                                <h3>Envirnonmental Advocacy</h3>
-                                <p>Passionate about environmental sustainability, I participate in advocacy programs. Through awareness campaigns and hands-on initiatives, I strive to make a positive impact, promoting eco-friendly practices and fostering a sense of responsibility toward our planet.</p>
-                            </figcaption>
-                        </figure>
+                    <div class="card voluntary-activities-item">
+                        <img class="card-icon voluntary-activities-item__img" src="assets/images/envirnoment.png" alt="Envirnonmental Advocacy">
+                        <h2 class="voluntary-activities-item__h2">Envirnonmental Advocacy</h2>
+                        <p class="card-p voluntary-activities-item__p">Passionate about environmental sustainability, I participate in advocacy programs. Through awareness campaigns and hands-on initiatives, I strive to make a positive impact, promoting eco-friendly practices and fostering a sense of responsibility toward our planet.</p>
                     </div>
                 </div>
             </section>
-            <section class="vha-hero hobbies-hero">
-                <h2 class="resume-heading">Hobbies</h2>
-                <div class="vha-item-container hobbies-container">
-                    <div class="vha-item hobby-item">
-                        <figure>
-                            <img src="images/photography.png" alt="Photography">
-                            <figcaption>
-                                <h3>Photography</h3>
-                                <p>Capturing moments through the lens is my passion. Photography allows me to explore creativity, play with perspectives, and immortalize memories. From landscapes to candid portraits, each shot tells a unique story.</p>
-                            </figcaption>
-                        </figure>
+            <section class="hobbies main__section">
+                <h2 class="section--heading hobbies__h2">Hobbies</h2>
+                <div class="hobbies__container">
+                    <div class="card hobbies-item">
+                        <img class="card-icon hobbies-item__img" src="assets/images/photography.png" alt="Photography">
+                        <h2 class="hobbies-item__h2">Photography</h2>
+                        <p class="card-p hobbies-item__p">Capturing moments through the lens is my passion. Photography allows me to explore creativity, play with perspectives, and immortalize memories. From landscapes to candid portraits, each shot tells a unique story.</p>
                     </div>
-                    <div class="vha-item hobby-item">
-                        <figure>
-                            <img src="images/gardening.png" alt="Gardening">
-                            <figcaption>
-                                <h3>Gardening</h3>
-                                <p>In the tranquility of my garden, I find solace. Nurturing plants, witnessing growth, and creating a harmonious green space bring joy and fulfillment. Gardening is not just a hobby; it's a therapeutic journey.</p>
-                            </figcaption>
-                        </figure>
+                    <div class="card hobbies-item">
+                        <img class="card-icon hobbies-item__img" src="assets/images/gardening.png" alt="Gardening">
+                        <h2 class="hobbies-item__h2">Gardening</h2>
+                        <p class="card-p hobbies-item__p">In the tranquility of my garden, I find solace. Nurturing plants, witnessing growth, and creating a harmonious green space bring joy and fulfillment. Gardening is not just a hobby; it's a therapeutic journey.</p>
                     </div>
-                    <div class="vha-item hobby-item">
-                        <figure>
-                            <img src="images/cooking.png" alt="Cooking">
-                            <figcaption>
-                                <h3>Cooking and Culinary Exploration</h3>
-                                <p>Culinary experimentation is my creative outlet. From mastering diverse cuisines to creating my own recipes, cooking is a delightful journey. It's a blend of flavors, an art form that tantalizes taste buds and sparks joy.</p>
-                            </figcaption>
-                        </figure>
+                    <div class="card hobbies-item">
+                        <img class="card-icon hobbies-item__img" src="assets/images/cooking.png" alt="Cooking">
+                        <h2 class="hobbies-item__h2">Cooking and Culinary Exploration</h2>
+                        <p class="card-p hobbies-item__p">Culinary experimentation is my creative outlet. From mastering diverse cuisines to creating my own recipes, cooking is a delightful journey. It's a blend of flavors, an art form that tantalizes taste buds and sparks joy.</p>
                     </div>
                 </div>
             </section>
-            <section class="vha-hero achievement-hero">
-                <h2 class="resume-heading">Achievements</h2>
-                <div class="vha-item-container achievement-container">
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/pro-milestone.png" alt="Professional Milestone">
-                            <figcaption>
-                                <h3>Professional Milestone</h3>
-                                <p>Achieving the 'Project of the Year' award marked a pivotal moment in my professional journey. This milestone not only showcased my expertise but also demonstrated dedication and resilience in overcoming challenges. It's a testament to my commitment to excellence in web development.</p>
-                            </figcaption>
-                        </figure>
+            <section class="achievements main__section">
+                <h2 class="section--heading achievements__h2">Achievements</h2>
+                <div class="achievements__container">
+                    <div class="card achievement-item">
+                        <img class="card-icon achievement-item__achievement-icon" src="assets/images/pro-milestone.png" alt="Professional Milestone">
+                        <h2 class="achievement-item__h2">Professional Milestone</h2>
+                        <p class="card-p achievement-item__p">Achieving the 'Project of the Year' award marked a pivotal moment in my professional journey. This milestone not only showcased my expertise but also demonstrated dedication and resilience in overcoming challenges. It's a testament to my commitment to excellence in web development.</p>
                     </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/academic-exe.png" alt="Academic Excellence">
-                            <figcaption>
-                                <h3>Academic Excellence</h3>
-                                <p>Attaining a Master's degree in Computer Science reflects my commitment to academic excellence. The rigorous pursuit of knowledge and the ability to apply it in real-world scenarios have been pivotal in shaping my skills and perspectives.</p>
-                            </figcaption>
-                        </figure>
+                    <div class="card achievement-item">
+                        <img class="card-icon achievement-item__achievement-icon" src="assets/images/academic-exe.png" alt="Academic Excellence">
+                        <h2 class="achievement-item__h2">Academic Excellence</h2>
+                        <p class="card-p achievement-item__p">Attaining a Master's degree in Computer Science reflects my commitment to academic excellence. The rigorous pursuit of knowledge and the ability to apply it in real-world scenarios have been pivotal in shaping my skills and perspectives.</p>
                     </div>
-                    <div class="vha-item">
-                        <figure>
-                            <img src="images/leadership.png" alt="Leadership Recognition">
-                            <figcaption>
-                                <h3>Leadership Recognition</h3>
-                                <p>Being recognized as the 'Team Leader of the Quarter' is a testament to my effective leadership style. Steering teams toward success, fostering collaboration, and achieving measurable outcomes are key components of my leadership journey, illustrating my ability to inspire and drive results.</p>
-                            </figcaption>
-                        </figure>
+                    <div class="card achievement-item">
+                        <img class="card-icon achievement-item__achievement-icon" src="assets/images/leadership.png" alt="Leadership Recognition">
+                        <h2 class="achievement-item__h2">Leadership Recognition</h2>
+                        <p class="card-p achievement-item__p">Being recognized as the 'Team Leader of the Quarter' is a testament to my effective leadership style. Steering teams toward success, fostering collaboration, and achieving measurable outcomes are key components of my leadership journey, illustrating my ability to inspire and drive results.</p>
                     </div>
                 </div>
             </section>
-            
         </section>
-        <section class="office-tour">
-            <h2 class="resume-heading">Take A Tour Of My Office</h2>
-            <p>Welcome to my work haven! The office is a symphony of creativity, adorned with minimalist aesthetics and vibrant touches. The spacious desk bathed in natural light is my command center, surrounded by tech essentials. Here, ideas come to life, fueled by inspiration and the hum of productivity.</p>
-            <div class="video-and-navbar">
-                <video src="media/office-tour.mp4" poster="images/my-office-poster.jpg" controls></video>
-                <aside>
-                    <h2>Navigation Links</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="#">My Biography</a></li>
-                            <li><a href="#">Featured Skills</a></li>
-                            <li><a href="#">Resume / CV</a></li>
-                            <li><a href="home.html#portfolio-section">Recent Works</a></li>
-                            <li><a href="#scroll-to-top">Testimonials</a></li>
+        <section class="office-tour main__section">
+            <h2 class="section--heading">Take A Tour Of My Office</h2>
+            <p class="office-tour__p">Welcome to my work haven! The office is a symphony of creativity, adorned with minimalist aesthetics and vibrant touches. The spacious desk bathed in natural light is my command center, surrounded by tech essentials. Here, ideas come to life, fueled by inspiration and the hum of productivity.</p>
+            <div class="office-tour__video-navigation">
+                <video class="video-navigation__video" src="assets/media/office-tour.mp4" poster="assets/images/my-office-poster.jpg" controls></video>
+                <aside class="video-navigation__navigation">
+                    <h2 class="navigation__h2">Navigation Links</h2>
+                    <nav class="navigation__nav">
+                        <ul class="navigation__nav--ul">
+                            <li class="navigation__ul-item"><a href="#my-biography">My Biography</a></li>
+                            <li class="navigation__ul-item"><a href="#featured-skills">Featured Skills</a></li>
+                            <li class="navigation__ul-item"><a href="#resume">Resume / CV</a></li>
+                            <li class="navigation__ul-item"><a href="home.html#my-portfolio">Recent Works</a></li>
+                            <li class="navigation__ul-item"><a href="#testimonials">Testimonials</a></li>
                         </ul>
                     </nav>
                 </aside>
             </div>
         </section>
-        <section class="reviews">
-            <h1>Reviews</h1>
-            <section class="testimonials">
-                <h2>My Clients and Testimonials</h2>
-                <div class="testimonials-container">
-                    <div class="testimonial-item">
-                        <div class="testimonial-id">
-                            <img src="images/test-1.png" alt="Testimonial 1">
-                            <div class="avatar-name-occupation">
-                                <h2>William James</h2>
-                                <h4>Photographer</h4>
+        <section class="reviews main__section" id="testimonials">
+            <h1 class="section--heading">Reviews</h1>
+            <section class="reviews__testimonials">
+                <h2 class="section--heading">My Clients and Testimonials</h2>
+                <div class="testimonials__container">
+                    <div class="card testimonial-item">
+                        <div class="item__testimonial-id">
+                            <img class="card-icon testimonial-id__img" src="assets/images/test-1.png" alt="Testimonial 1">
+                            <div class="testimonial-id__name-occupation">
+                                <h2 class="name-occupation__h2">William James</h2>
+                                <h4 class="name-occupation__h4">Photographer</h4>
                             </div>
                         </div>
-                        <blockquote>
-                            <p>"Working with Hamdi was a game-changer! His design expertise and seamless collaboration brought our vision to life. Professional, innovative, and a true pleasure to work with."</p>
-                            <p>Rating: ⭐⭐⭐⭐ (4/5)</p>
+                        <blockquote class="testimonial-item__blockquote">
+                            <p class="blockquote__p--quote">"Working with Hamdi was a game-changer! His design expertise and seamless collaboration brought our vision to life. Professional, innovative, and a true pleasure to work with."</p>
+                            <p class="blockquote__p--rating">Rating: ⭐⭐⭐⭐ (4/5)</p>
                         </blockquote>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-id">
-                            <img src="images/test-2.png" alt="Testimonial 2">
-                            <div class="avatar-name-occupation">
-                                <h2>David Rodriguez</h2>
-                                <h4>Business Owner</h4>
+                    <div class="card testimonial-item">
+                        <div class="item__testimonial-id">
+                            <img class="card-icon testimonial-id__img" src="assets/images/test-2.png" alt="Testimonial 2">
+                            <div class="testimonial-id__name-occupation">
+                                <h2 class="name-occupation__h2">David Rodriguez</h2>
+                                <h4 class="name-occupation__h4">Business Owner</h4>
                             </div>
                         </div>
-                        <blockquote>
-                            <p>"Hamdi exceeded expectations! His web development skills transformed our online presence. Responsive, detail-oriented, and always meeting deadlines. A top-notch professional that I highly recommend."</p>
-                            <p>Rating: ⭐⭐⭐⭐⭐ (5/5)</p>
+                        <blockquote class="testimonial-item__blockquote">
+                            <p class="blockquote__p--quote">"Hamdi exceeded expectations! His web development skills transformed our online presence. Responsive, detail-oriented, and always meeting deadlines. A top-notch professional that I highly recommend."</p>
+                            <p class="blockquote__p--rating">Rating: ⭐⭐⭐⭐⭐ (5/5)</p>
                         </blockquote>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-id">
-                            <img src="images/test-3.png" alt="Testimonial 3">
-                            <div class="avatar-name-occupation">
-                                <h2>Emily Parker</h2>
-                                <h4>Marketing Specialist</h4>
+                    <div class="card testimonial-item">
+                        <div class="item__testimonial-id">
+                            <img class="card-icon testimonial-id__img" src="assets/images/test-3.png" alt="Testimonial 3">
+                            <div class="testimonial-id__name-occupation">
+                                <h2 class="name-occupation__h2">Emily Parker</h2>
+                                <h4 class="name-occupation__h4">Marketing Specialist</h4>
                             </div>
                         </div>
-                        <blockquote>
-                            <p>"Exceptional UI design by Hamdi! His creativity and attention to detail made our project stand out. Timely delivery and a collaborative spirit. A reliable and skilled professional!"</p>
-                            <p>Rating: ⭐⭐⭐⭐ (4/5)</p>
+                        <blockquote class="testimonial-item__blockquote">
+                            <p class="blockquote__p--quote">"Exceptional UI design by Hamdi! His creativity and attention to detail made our project stand out. Timely delivery and a collaborative spirit. A reliable and skilled professional!"</p>
+                            <p class="blockquote__p--rating">Rating: ⭐⭐⭐⭐ (4/5)</p>
                         </blockquote>
                     </div>
                 </div>
-                <p><a href="#">Read More ➡</a></p>
+                <p class="reviews__testimonials--p"><a class="learn-more" href="#">Read More ➡</a>
             </section>
         </section>
     </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
+    <footer class="footer">
+        <div class="inner-container footer__contact-container">
+            <p><a class="logo" href="home.html">Hamdi M.</a></p>
+            <address class="contact-container__address">
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
             </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">🔼</span></a>
+            <div class="contact-container__copyright-socials">
+                <p class="copyright-socials__copyright">&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
+                <div class="copyright-socials__socials">
+                    <a class="socials-item" href="https://github.com/hmyunis"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/github.svg" alt="Github"></a>
+                    <a class="socials-item" href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/linkedin.svg" alt="LinkedIn"></a>
+                    <a class="socials-item" href="https://t.me/Hamdi00"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/telegram.svg" alt="Telegram"></a>
+                    <a class="socials-item btn" href="#">🔼</a>
                 </div>
             </div>
         </div>

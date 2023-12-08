@@ -4,100 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
-            </div>
-            <img src="images/svg/menu.svg" alt="Menu">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="current"><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
+    <header class="header">
+        <div class="header__container">
+            <p class="logo-container"><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
+            <nav class="header__nav">
+                <img class="header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu">
+                <ul class="header__nav--ul">
+                    <li class="nav__ul-item"><a href="home.html">Home</a></li>
+                    <li class="nav__ul-item"><a href="about.html">About</a></li>
+                    <li class="nav__ul-item nav__ul-item--current"><a href="services.html">Services</a></li>
+                    <li class="nav__ul-item"><a href="pricing.html">Pricing</a></li>
+                    <li class="nav__ul-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav__ul-item"><a class="btn" id="btn--hire-me" href="contact.html">Hire Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="services-title-cover">
-            <h1>Services</h1>
-        </section>
-        <section class="what-I-do">
-            <h1 class="resume-heading">What I Do For You</h1>
-            <div class="service-list-container">
-                <div class="service-item">
-                    <img class="service-icon" src="images/web-dev-icon.png" alt="Web Development">
-                    <h2>Web Development</h2>
-                    <p>I specialize in crafting dynamic and responsive websites tailored to your needs. From conceptualization to deployment, I ensure a seamless user experience with visually appealing designs and efficient code, bringing your digital vision to life.</p>
+        <h1 class="page--heading services-page-title">Services</h1>
+        <section class="what-I-do main__section">
+            <h1 class="what-I-do__h1 section--heading">What I Do For You</h1>
+            <div class="what-I-do__services">
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/web-dev-icon.png" alt="Web Development">
+                    <h2 class="service-item__h2">Web Development</h2>
+                    <p class="card-p service-item__p">I specialize in crafting dynamic and responsive websites tailored to your needs. From conceptualization to deployment, I ensure a seamless user experience with visually appealing designs and efficient code, bringing your digital vision to life.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/app-dev-icon.png" alt="App Development">
-                    <h2>App Development</h2>
-                    <p>Dive into the world of innovative mobile applications. I create user-centric apps that captivate and engage. Whether it's iOS or Android, I leverage cutting-edge technologies to deliver seamless experiences, ensuring your app stands out in the crowded digital landscape.</p>
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/app-dev-icon.png" alt="App Development">
+                    <h2 class="service-item__h2">App Development</h2>
+                    <p class="card-p service-item__p">Dive into the world of innovative mobile applications. I create user-centric apps that captivate and engage. Whether it's iOS or Android, I leverage cutting-edge technologies to deliver seamless experiences, ensuring your app stands out in the crowded digital landscape.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/photo-icon.png" alt="Photography">
-                    <h2>Photography</h2>
-                    <p>Through my lens, I capture moments that tell unique stories. From portraits to landscapes, my photography is a blend of creativity and technical finesse. Whether it's a personal shoot or corporate event, I strive to immortalize memories with a distinctive and captivating visual narrative.</p>
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/photo-icon.png" alt="Photography">
+                    <h2 class="service-item__h2">Photography</h2>
+                    <p class="card-p service-item__p">Through my lens, I capture moments that tell unique stories. From portraits to landscapes, my photography is a blend of creativity and technical finesse. Whether it's a personal shoot or corporate event, I strive to immortalize memories with a distinctive and captivating visual narrative.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/seo-icon.png" alt="SEO Marketing">
-                    <h2>SEO Marketing</h2>
-                    <p> I optimize your online presence for visibility. Through keyword research, on-page optimization, and strategic link building, I enhance your website's ranking, ensuring it stands out in search results.</p>
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/seo-icon.png" alt="SEO Marketing">
+                    <h2 class="service-item__h2">SEO Marketing</h2>
+                    <p class="card-p service-item__p"> I optimize your online presence for visibility. Through keyword research, on-page optimization, and strategic link building, I enhance your website's ranking, ensuring it stands out in search results.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/responsive-icon.png" alt="Responsive Design">
-                    <h2>Responsive Design</h2>
-                    <p>Specializing in responsive design, I create websites that adapt seamlessly to diverse devices. Prioritizing user experience, my designs ensure optimal functionality, regardless of screen size or device type.</p>
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/responsive-icon.png" alt="Responsive Design">
+                    <h2 class="service-item__h2">Responsive Design</h2>
+                    <p class="card-p service-item__p">Specializing in responsive design, I create websites that adapt seamlessly to diverse devices. Prioritizing user experience, my designs ensure optimal functionality, regardless of screen size or device type.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/digital-icon.png" alt="Digital Marketing">
-                    <h2>Digital Marketing</h2>
-                    <p>I orchestrate effective strategies to boost your online presence. From social media campaigns to targeted content, I drive engagement and elevate brand visibility for lasting impact.</p>
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/digital-icon.png" alt="Digital Marketing">
+                    <h2 class="service-item__h2">Digital Marketing</h2>
+                    <p class="card-p service-item__p">I orchestrate effective strategies to boost your online presence. From social media campaigns to targeted content, I drive engagement and elevate brand visibility for lasting impact.</p>
                 </div>
             </div>
         </section>
-        <section class="innovative-solutions">
-            <h1 class="resume-heading">Innovative Solutions To Boost Your Creative Projects</h1>
-            <div class="solutions-container">
-                <div class="solution-item">
-                    <img src="images/discuss.jpg" alt="Discuss the Project">
-                    <h2>Discuss the project</h2>
+        <section class="innovative-solutions main__section">
+            <h1 class="section--heading">Innovative Solutions To Boost Your Creative Projects</h1>
+            <div class="innovative-solutions__container">
+                <div class="card solution-item">
+                    <img class="solution-item__img" src="assets/images/discuss.jpg" alt="Discuss the Project">
+                    <h2 class="solution-item__h2">Discuss the project</h2>
                 </div>
-                <div class="solution-item">
-                    <img src="images/develop-elaborate.jpg" alt="Develop and Elaborate">
-                    <h2>Develop and Elaborate</h2>
+                <div class="card solution-item">
+                    <img class="solution-item__img" src="assets/images/develop-elaborate.jpg" alt="Develop and Elaborate">
+                    <h2 class="solution-item__h2">Develop and Elaborate</h2>
                 </div>
-                <div class="solution-item">
-                    <img src="images/approvement.jpg" alt="Final Approvement">
-                    <h2>Final Approvement</h2>
+                <div class="card solution-item">
+                    <img class="solution-item__img" src="assets/images/approvement.jpg" alt="Final Approvement">
+                    <h2 class="solution-item__h2">Final Approvement</h2>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
+    <footer class="footer">
+        <div class="inner-container footer__contact-container">
+            <p><a class="logo" href="home.html">Hamdi M.</a></p>
+            <address class="contact-container__address">
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
             </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">🔼</span></a>
+            <div class="contact-container__copyright-socials">
+                <p class="copyright-socials__copyright">&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
+                <div class="copyright-socials__socials">
+                    <a class="socials-item" href="https://github.com/hmyunis"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/github.svg" alt="Github"></a>
+                    <a class="socials-item" href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/linkedin.svg" alt="LinkedIn"></a>
+                    <a class="socials-item" href="https://t.me/Hamdi00"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/telegram.svg" alt="Telegram"></a>
+                    <a class="socials-item btn" href="#">🔼</a>
                 </div>
             </div>
         </div>

@@ -4,101 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
-            </div>
-            <img src="images/svg/menu.svg" alt="Menu">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li class="current"><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
+    <header class="header">
+        <div class="header__container">
+            <p class="logo-container"><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
+            <nav class="header__nav">
+                <img class="header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu">
+                <ul class="header__nav--ul">
+                    <li class="nav__ul-item"><a href="home.html">Home</a></li>
+                    <li class="nav__ul-item"><a href="about.html">About</a></li>
+                    <li class="nav__ul-item"><a href="services.html">Services</a></li>
+                    <li class="nav__ul-item nav__ul-item--current"><a href="pricing.html">Pricing</a></li>
+                    <li class="nav__ul-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav__ul-item"><a class="btn" id="btn--hire-me" href="contact.html">Hire Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="pricing-title-cover">
-            <h1>Pricing</h1>
-        </section>
-        <div class="pricing-intro">
-            <p>Explore tailored solutions for your web development and UI design needs. Choose from Starter, Standard, or Premium packs, each offering a unique blend of services at competitive prices. Elevate your online presence with quality craftsmanship and expert support. Let's bring your vision to life!</p>
-        </div>
-        <div class="price-options-container">
-            <div class="price-option">
-                <section>
-                    <h2>Starter Pack</h2>
-                    <h1>$500</h1>
-                    <h3>per month. That's just $13 per session!</h3>
+        <h1 class="page--heading pricing-page-title">Pricing</h1>
+        <p class="pricing-intro--p">Explore tailored solutions for your web development and UI design needs. Choose from Starter, Standard, or Premium packs, each offering a unique blend of services at competitive prices. Elevate your online presence with quality craftsmanship and expert support. Let's bring your vision to life!</p>
+        <div class="pricing-options__container">
+            <div class="price-option-item">
+                <section class="item--headings">
+                    <h2 class="item--headings__h2">Starter Pack</h2>
+                    <h1 class="item--headings__h1">$500</h1>
+                    <h3 class="item--headings__h3">per month. That's just $13 per session!</h3>
                 </section>
-                <ul>
-                    <li>Basic Portfolio Website (Up to 5 pages)</li>
-                    <li>Custom Design (1 round of revisions)</li>
-                    <li>Basic SEO Optimization (Meta tags, descriptions, image optimization)</li>
-                    <li>Contact Form (Mobile responsiveness)</li>
-                    <li>1-Month Support (Bug fixes and minor updates)</li>
+                <ul class="item__deliverables--ul">
+                    <li class="deliverable-item">Basic Portfolio Website (Up to 5 pages)</li>
+                    <li class="deliverable-item">Custom Design (1 round of revisions)</li>
+                    <li class="deliverable-item">Basic SEO Optimization (Meta tags, descriptions, image optimization)</li>
+                    <li class="deliverable-item">Contact Form (Mobile responsiveness)</li>
+                    <li class="deliverable-item">1-Month Support (Bug fixes and minor updates)</li>
                 </ul>
-                <a href="contact.html">Get Started</a>
+                <a class="btn item__get-started" href="contact.html">Get Started</a>
             </div>
-            <div class="price-option">
-                <section>
-                    <h2>Standard Pack</h2>
-                    <h1>$1000</h1>
-                    <h3>per month. That's just $26 per session!</h3>
+            <div class="price-option-item">
+                <section class="item--headings">
+                    <h2 class="item--headings__h2">Standard Pack</h2>
+                    <h1 class="item--headings__h1">$1000</h1>
+                    <h3 class="item--headings__h3">per month. That's just $26 per session!</h3>
                 </section>
-                <ul>
-                    <li>Standard Portfolio Website (Up to 10 pages)</li>
-                    <li>Custom Design (2 rounds of revisions)</li>
-                    <li>Basic SEO Optimization (Meta tags, descriptions, image optimization, Google Analytics setup)</li>
-                    <li>Social Media Integration (Links to your profiles)</li>
-                    <li>2-Month Support (Bug fixes and updates)</li>
+                <ul class="item__deliverables--ul">
+                    <li class="deliverable-item">Standard Portfolio Website (Up to 10 pages)</li>
+                    <li class="deliverable-item">Custom Design (2 rounds of revisions)</li>
+                    <li class="deliverable-item">Basic SEO Optimization (Meta tags, descriptions, image optimization, Google Analytics setup)</li>
+                    <li class="deliverable-item">Social Media Integration (Links to your profiles)</li>
+                    <li class="deliverable-item">2-Month Support (Bug fixes and updates)</li>
                 </ul>
-                <a href="contact.html">Get Started</a>
+                <a class="btn item__get-started" href="contact.html">Get Started</a>
             </div>
-            <div class="price-option premium-pack">
-                <section>
-                    <h2>Premium Pack</h2>
-                    <h1>$2000</h1>
-                    <h3>per month. That's just $52 per session!</h3>
+            <div class="price-option-item pricing-options__premium-pack">
+                <section class="item--headings">
+                    <h2 class="item--headings__h2">Premium Pack</h2>
+                    <h1 class="item--headings__h1 premium-pack__h1">$2000</h1>
+                    <h3 class="item--headings__h3">per month. That's just $52 per session!</h3>
                 </section>
-                <ul>
-                    <li>Premium Portfolio Website (Up to 15 pages)</li>
-                    <li>Custom Design (3 rounds of revisions)</li>
-                    <li>Comprehensive SEO Optimization (Advanced keyword research, XML sitemap submission, speed optimization)</li>
-                    <li>Social Media Integration (Links to your profiles, social sharing features)</li>
-                    <li>3-Month Support (Priority support, bug fixes, and updates)</li>
+                <ul class="item__deliverables--ul">
+                    <li class="deliverable-item">Premium Portfolio Website (Up to 15 pages)</li>
+                    <li class="deliverable-item">Custom Design (3 rounds of revisions)</li>
+                    <li class="deliverable-item">Comprehensive SEO Optimization (Advanced keyword research, XML sitemap submission, speed optimization)</li>
+                    <li class="deliverable-item">Social Media Integration (Links to your profiles, social sharing features)</li>
+                    <li class="deliverable-item">3-Month Support (Priority support, bug fixes, and updates)</li>
                 </ul>
-                <a href="contact.html">Get Started</a>
+                <a class="btn item__get-started" href="contact.html">Get Started</a>
             </div>
         </div>
-        <div class="pricing-outro">
-            <p>All prices include applicable taxes. Enjoy flexibility with the option to cancel anytime. Your satisfaction matters, and I'm committed to delivering value throughout your digital journey. Let's build something exceptional together!</p>
-        </div>
+        <p class="pricing-outro--p">All prices include applicable taxes. Enjoy flexibility with the option to cancel anytime. Your satisfaction matters, and I'm committed to delivering value throughout your digital journey. Let's build something exceptional together!</p>
     </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
+    <footer class="footer">
+        <div class="inner-container footer__contact-container">
+            <p><a class="logo" href="home.html">Hamdi M.</a></p>
+            <address class="contact-container__address">
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
             </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">🔼</span></a>
+            <div class="contact-container__copyright-socials">
+                <p class="copyright-socials__copyright">&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
+                <div class="copyright-socials__socials">
+                    <a class="socials-item" href="https://github.com/hmyunis"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/github.svg" alt="Github"></a>
+                    <a class="socials-item" href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/linkedin.svg" alt="LinkedIn"></a>
+                    <a class="socials-item" href="https://t.me/Hamdi00"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/telegram.svg" alt="Telegram"></a>
+                    <a class="socials-item btn" href="#">🔼</a>
                 </div>
             </div>
         </div>

@@ -4,172 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HM Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/HM-favicon-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <p><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
-            </div>
-            <img src="images/svg/menu.svg" alt="Menu">
-            <nav>
-                <ul>
-                    <li class="current"><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a id="hire-me-btn-1" href="contact.html">Hire Me</a></li>
+    <header class="header">
+        <div class="header__container">
+            <p class="logo-container"><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
+            <nav class="header__nav">
+                <ul class="header__nav--ul">
+                    <li class="nav__ul-item nav__ul-item--current"><a href="home.html">Home</a></li>
+                    <li class="nav__ul-item"><a href="about.html">About</a></li>
+                    <li class="nav__ul-item"><a href="services.html">Services</a></li>
+                    <li class="nav__ul-item"><a href="pricing.html">Pricing</a></li>
+                    <li class="nav__ul-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav__ul-item"><a class="btn" id="btn--hire-me" href="contact.html">Hire Me</a></li>
                 </ul>
             </nav>
+            <img class="header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu">
         </div>
     </header>
     <main>
-        <section class="profile-intro">
-            <img id="avatar-img" src="images/avatar.png" alt="My Photo">
-            <h1>
+        <section class="profile-intro main__section">
+            <img class="profile-intro__avatar-img" src="assets/images/avatar.png" alt="My Photo">
+            <h1 class="profile-intro__h1">
                 Hi, I'm Hamdi Mohammed
             </h1>
-            <h2>Student, UI Designer & Web Developer</h2>
-            <h3>Diving into the dynamic realm of UI design and web development, I craft visually captivating digital experiences, seamlessly fusing creativity with cutting-edge technology. Join the journey!</h3>
-            <div class="intro-buttons">
-                <a id="hire-me-btn-2" href="#scroll-to-top">Connect</a>
-                <a id="my-portfolio-btn" href="#portfolio-section">My Portfolio</a>
+            <h2 class="profile-intro__h2">Student, UI Designer & Web Developer</h2>
+            <h3 class="profile-intro__h3">Diving into the dynamic realm of UI design and web development, I craft visually captivating digital experiences, seamlessly fusing creativity with cutting-edge technology. Join the journey!</h3>
+            <div class="profile-intro__intro-buttons">
+                <a class="btn btn--connect" href="#connect-directly">Connect</a>
+                <a class="btn btn--my-portfolio" href="#my-portfolio">My Portfolio</a>
             </div>
         </section>
-        <section class="my-biography">
-            <div class="bio-container">
-                <img id="bio-img" src="images/bio-photo.png" alt="My Photo">
-                <div>
-                    <h3>My Biography</h3>
-                    <h1>An Undergrad UI Designer & Web Developer Based in Ethiopia</h1>
-                    <p>Greetings! I'm Hamdi Mohammed, a fervent student, immersed in the worlds of UI design and web development. Currently pursuing my Software Engineering degree at Addis Ababa University, my journey is defined by a commitment to fuse creativity and technology into impactful digital experiences. My passion ignited during early academic years, and through comprehensive coursework, I've cultivated skills spanning both the aesthetic and technical dimensions of UI design and web development. A believer in the transformative power of design, I am dedicated to crafting interfaces that not only captivate visually but also deliver seamless, user-centric interactions.</p>
-                    <p>In the dynamic landscape of design, I draw inspiration from diverse sources, translating it into visually stunning and functionally robust interfaces. On the development front, my focus lies in the creation of clean and efficient code, translating design concepts into functional and responsive websites. My attention to detail ensures that every pixel serves a purpose, aligning with the overarching vision of a project. This meticulous approach results in digital experiences that seamlessly merge form and function, fostering a sense of connection and usability.</p>
-                    <p>Beyond the academic realm, I actively seek and thrive in opportunities to apply my skills to real-world projects. This hands-on experience has not only expanded my technical proficiency but also cultivated a profound appreciation for collaboration and innovative problem-solving. Engaging in diverse projects has equipped me with the ability to think critically and push the boundaries of my capabilities, contributing to a robust skill set that I bring to every endeavor.</p>
-                    <a id="learn-more-bio" href="about.html">Learn More ➡</a>
-                    <div class="listen-biography">
-                        <label>Listen to the article🔉</label>
-                        <audio src="media/bio-audio.mp3" controls muted></audio>
+        <section class="my-biography main__section">
+            <div class="inner-container my-biography__container">
+                <img class="my-biography__bio-img" src="assets/images/bio-photo.png" alt="My Photo">
+                <hgroup class="my-biography__text-content">
+                    <h3 class="text-content__h3">My Biography</h3>
+                    <h1 class="text-content__h1">An Undergrad UI Designer & Web Developer Based in Ethiopia</h1>
+                    <p class="text-content__p">Greetings! I'm Hamdi Mohammed, a fervent student, immersed in the worlds of UI design and web development. Currently pursuing my Software Engineering degree at Addis Ababa University, my journey is defined by a commitment to fuse creativity and technology into impactful digital experiences. My passion ignited during early academic years, and through comprehensive coursework, I've cultivated skills spanning both the aesthetic and technical dimensions of UI design and web development. A believer in the transformative power of design, I am dedicated to crafting interfaces that not only captivate visually but also deliver seamless, user-centric interactions.</p>
+                    <p class="text-content__p">In the dynamic landscape of design, I draw inspiration from diverse sources, translating it into visually stunning and functionally robust interfaces. On the development front, my focus lies in the creation of clean and efficient code, translating design concepts into functional and responsive websites. My attention to detail ensures that every pixel serves a purpose, aligning with the overarching vision of a project. This meticulous approach results in digital experiences that seamlessly merge form and function, fostering a sense of connection and usability.</p>
+                    <p class="text-content__p">Beyond the academic realm, I actively seek and thrive in opportunities to apply my skills to real-world projects. This hands-on experience has not only expanded my technical proficiency but also cultivated a profound appreciation for collaboration and innovative problem-solving. Engaging in diverse projects has equipped me with the ability to think critically and push the boundaries of my capabilities, contributing to a robust skill set that I bring to every endeavor.</p>
+                    <a class="text-content__a learn-more" href="about.html">Learn More ➡</a>
+                    <div class="text-content__listen-biography">
+                        <label class="listen-biography__label">Listen to the article🔉</label>
+                        <audio class="listen-biography__audio" src="assets/media/bio-audio.mp3" controls muted></audio>
                     </div>
-                </div>
+                </hgroup>
             </div>
         </section>
-        <section class="what-I-do">
-            <h1>What I Do For You</h1>
-            <div class="service-list-container">
-                <div class="service-item">
-                    <img class="service-icon" src="images/web-dev-icon.png" alt="Web Development">
-                    <h2>Web Development</h2>
-                    <p>I specialize in crafting dynamic and responsive websites tailored to your needs. From conceptualization to deployment, I ensure a seamless user experience with visually appealing designs and efficient code, bringing your digital vision to life.</p>
+        <section class="what-I-do main__section">
+            <h1 class="what-I-do__h1 section--heading">What I Do For You</h1>
+            <div class="what-I-do__services">
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/web-dev-icon.png" alt="Web Development">
+                    <h2 class="service-item__h2">Web Development</h2>
+                    <p class="card-p service-item__p">I specialize in crafting dynamic and responsive websites tailored to your needs. From conceptualization to deployment, I ensure a seamless user experience with visually appealing designs and efficient code, bringing your digital vision to life.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/app-dev-icon.png" alt="App Development">
-                    <h2>App Development</h2>
-                    <p>Dive into the world of innovative mobile applications. I create user-centric apps that captivate and engage. Whether it's iOS or Android, I leverage cutting-edge technologies to deliver seamless experiences, ensuring your app stands out in the crowded digital landscape.</p>
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/app-dev-icon.png" alt="App Development">
+                    <h2 class="service-item__h2">App Development</h2>
+                    <p class="card-p service-item__p">Dive into the world of innovative mobile applications. I create user-centric apps that captivate and engage. Whether it's iOS or Android, I leverage cutting-edge technologies to deliver seamless experiences, ensuring your app stands out in the crowded digital landscape.</p>
                 </div>
-                <div class="service-item">
-                    <img class="service-icon" src="images/photo-icon.png" alt="Photography">
-                    <h2>Photography</h2>
-                    <p>Through my lens, I capture moments that tell unique stories. From portraits to landscapes, my photography is a blend of creativity and technical finesse. Whether it's a personal shoot or corporate event, I strive to immortalize memories with a distinctive and captivating visual narrative.</p>
+                <div class="card services__service-item">
+                    <img class="card-icon service-item__service-icon" src="assets/images/photo-icon.png" alt="Photography">
+                    <h2 class="service-item__h2">Photography</h2>
+                    <p class="card-p service-item__p">Through my lens, I capture moments that tell unique stories. From portraits to landscapes, my photography is a blend of creativity and technical finesse. Whether it's a personal shoot or corporate event, I strive to immortalize memories with a distinctive and captivating visual narrative.</p>
                 </div>
             </div>
-            <p><a href="services.html">More Services ➡</a></p>
+            <p class="what-I-do__p"><a class="learn-more" href="services.html">More Services ➡</a></p>
         </section>
-        <section id="portfolio-section" class="achievement-stats">
-            <ul id="stats">
-                <li><figure>
+        <section class="achievement-stats main__section" id="my-portfolio">
+            <ul class="achievement-stats__ul">
+                <li class="achievement-stats__ul-item"><figure>
                     <h1>81</h1>
                     <figcaption>Finished Projects</figcaption>
                 </figure></li>
-                <li><figure>
+                <li class="achievement-stats__ul-item"><figure>
                     <h1>2500</h1>
                     <figcaption>Working Hours</figcaption>
                 </figure></li>
-                <li><figure>
+                <li class="achievement-stats__ul-item"><figure>
                     <h1>200</h1>
                     <figcaption>Online Support</figcaption>
                 </figure></li>
-                <li><figure>
+                <li class="achievement-stats__ul-item"><figure>
                     <h1>63</h1>
                     <figcaption>Happy Customers</figcaption>
                 </figure></li>
             </ul>
         </section>
-        <section class="recent-work">
-            <h1>My Success Work</h1>
-            <div class="recent-work-list">
-                <div class="work">
-                    <figure>
-                        <img src="images/work-1.png" alt="Work 1">
-                        <figcaption>
-                            <p><b>TaskTracker Pro:</b> Streamline productivity with a feature-rich task management app, offering collaboration, reminders, and progress tracking for seamless project execution.</p>
+        <section class="portfolio main__section">
+            <h1 class="portfolio__h1 section--heading">My Success Work</h1>
+            <div class="portfolio__recent-works">
+                <div class="recent-works__work-item">
+                    <figure class="work-item__figure">
+                        <img class="work-item__figure--img" src="assets/images/work-1.png" alt="Work 1">
+                        <figcaption class="work-item__figure--caption">
+                            <p><span class="fw-bold">TaskTracker Pro:</span> Streamline productivity with a feature-rich task management app, offering collaboration, reminders, and progress tracking for seamless project execution.</p>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="work">
-                    <figure>
-                        <img src="images/work-2.png" alt="Work 2">
-                        <figcaption>
-                            <p><b>EventBuddy Connect:</b> Elevate event experiences with a networking app, facilitating attendee engagement, scheduling, and personalized recommendations for unforgettable gatherings.</p>
+                <div class="recent-works__work-item">
+                    <figure class="work-item__figure">
+                        <img class="work-item__figure--img" src="assets/images/work-2.png" alt="Work 2">
+                        <figcaption class="work-item__figure--caption">
+                            <p><span class="fw-bold">EventBuddy Connect:</span> Elevate event experiences with a networking app, facilitating attendee engagement, scheduling, and personalized recommendations for unforgettable gatherings.</p>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="work">
-                    <figure>
-                        <img src="images/work-3.png" alt="Work 3">
-                        <figcaption>
-                            <p><b>EcoFootprint Analyzer:</b> Foster sustainability with an app assessing and reducing ecological impact, featuring carbon footprint tracking, eco-tips, and community initiatives for a greener world.</p>
+                <div class="recent-works__work-item">
+                    <figure class="work-item__figure">
+                        <img class="work-item__figure--img" src="assets/images/work-3.png" alt="Work 3">
+                        <figcaption class="work-item__figure--caption">
+                            <p><span class="fw-bold">EcoFootprint Analyzer:</span> Foster sustainability with an app assessing and reducing ecological impact, featuring carbon footprint tracking, eco-tips, and community initiatives for a greener world.</p>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="work">
-                    <figure>
-                        <img src="images/work-4.png" alt="Work 4">
-                        <figcaption>
-                            <p><b>SkillSwap Marketplace:</b> Empower skill-sharing within communities through a platform connecting users for knowledge exchange, workshops, and collaborative learning experiences.</p>
+                <div class="recent-works__work-item">
+                    <figure class="work-item__figure">
+                        <img class="work-item__figure--img" src="assets/images/work-4.png" alt="Work 4">
+                        <figcaption class="work-item__figure--caption">
+                            <p><span class="fw-bold">SkillSwap Marketplace:</span> Empower skill-sharing within communities through a platform connecting users for knowledge exchange, workshops, and collaborative learning experiences.</p>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="work">
-                    <figure>
-                        <img src="images/work-5.png" alt="Work 5">
-                        <figcaption>
-                            <p><b>HealthHub Navigator:</b> Revolutionize wellness with a health tracking app, combining fitness routines, nutrition planning, and progress analytics for a personalized and holistic lifestyle approach.</p>
+                <div class="recent-works__work-item">
+                    <figure class="work-item__figure">
+                        <img class="work-item__figure--img" src="assets/images/work-5.png" alt="Work 5">
+                        <figcaption class="work-item__figure--caption">
+                            <p><span class="fw-bold">HealthHub Navigator:</span> Revolutionize wellness with a health tracking app, combining fitness routines, nutrition planning, and progress analytics for a personalized and holistic lifestyle approach.</p>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="work">
-                    <figure>
-                        <img src="images/work-6.png" alt="Work 6">
-                        <figcaption>
-                            <p><b>LocalCrafter's Corner:</b> Boost local artisans with an e-commerce app, showcasing handmade crafts, supporting small businesses, and fostering a vibrant community of creators and buyers.</p>
+                <div class="recent-works__work-item">
+                    <figure class="work-item__figure">
+                        <img class="work-item__figure--img" src="assets/images/work-6.png" alt="Work 6">
+                        <figcaption class="work-item__figure--caption">
+                            <p><span class="fw-bold">LocalCrafter's Corner:</span> Boost local artisans with an e-commerce app, showcasing handmade crafts, supporting small businesses, and fostering a vibrant community of creators and buyers.</p>
                         </figcaption>
                     </figure>
                 </div>
             </div>
         </section>
         <div class="client-companies">
-            <img src="images/clients-1.png" alt="Trusted Client Companies">
-            <img src="images/clients-2.png" alt="Trusted Client Companies">
+            <img class="client-companies__img" src="assets/images/clients-1.png" alt="Trusted Client Companies">
+            <img class="client-companies__img" src="assets/images/clients-2.png" alt="Trusted Client Companies">
         </div>
     </main>
-    <footer>
-        <div class="contact">
-            <p class="logo">Hamdi M.</p>
-            <address>
-                <p><img src="images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
-                <p><img src="images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
-                <p><img src="images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
+    <footer class="footer">
+        <div class="inner-container footer__contact-container">
+            <p><a class="logo" href="home.html">Hamdi M.</a></p>
+            <address class="contact-container__address" id="connect-directly">
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/phone-solid.svg" alt="Phone"> <a href="#">+251 912 345 678</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/envelope-solid.svg" alt="Email"> <a href="mailto:hm456123@gmail.com">hm456123@gmail.com</a></p>
+                <p class="address__contact-detail-item"><img class="svg-icon contact-detail-item__svg-icon" src="assets/images/svg/location-dot-solid.svg" alt="Location"> <a href="https://maps.app.goo.gl/XnbEU1CXgs9zGk3y7">5kilo AAiT, Addis Ababa</a></p>
             </address>
-            <div class="copyright-container">
-                <p>&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="https://github.com/hmyunis"><img src="images/svg/github.svg" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img src="images/svg/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://t.me/Hamdi00"><img src="images/svg/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><span id="scroll-to-top">🔼</span></a>
+            <div class="contact-container__copyright-socials">
+                <p class="copyright-socials__copyright">&copy; 2023 <a href="home.html"><span class="logo">Hamdi M.</span>™</a> | All Rights Reserved</p>
+                <div class="copyright-socials__socials">
+                    <a class="socials-item" href="https://github.com/hmyunis"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/github.svg" alt="Github"></a>
+                    <a class="socials-item" href="https://www.linkedin.com/in/hamdi-mohammed-454531202/"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/linkedin.svg" alt="LinkedIn"></a>
+                    <a class="socials-item" href="https://t.me/Hamdi00"><img class="svg-icon socials-item__svg-icon" src="assets/images/svg/telegram.svg" alt="Telegram"></a>
+                    <a class="socials-item btn" href="#">🔼</a>
                 </div>
             </div>
         </div>
