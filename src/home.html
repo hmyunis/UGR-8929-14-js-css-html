@@ -6,11 +6,12 @@
     <title>HM Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="assets/images/HM-favicon-png.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <p class="logo-container"><a href="home.html" class="logo">Hamdi M.</a> Portfolio</p>
+            <p class="logo-container"><a href="home.html" class="logo">Hamdi M.</a> <span id="typed-output">Portfolio</span></p>
             <nav class="header__nav">
                 <ul class="header__nav--ul">
                     <li class="nav__ul-item nav__ul-item--current"><a href="home.html">Home</a></li>
@@ -23,6 +24,16 @@
             </nav>
             <img class="header__menu-icon" src="assets/images/svg/menu.svg" alt="Menu">
         </div>
+        <ul class="header__nav--mobile hidden">
+            <li class="nav__ul-item--mobile"><a class="nav__ul-item--mobile-current" href="home.html">Home</a></li>
+            <li class="nav__ul-item--mobile"><a href="about.html">About</a></li>
+            <li class="nav__ul-item--mobile"><a href="services.html">Services</a></li>
+            <li class="nav__ul-item--mobile"><a href="pricing.html">Pricing</a></li>
+            <li class="nav__ul-item--mobile"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="header__scroll-progress-container">
+            <div class="scroll-progress"></div>
+        </div>
     </header>
     <main>
         <section class="profile-intro main__section">
@@ -33,8 +44,8 @@
             <h2 class="profile-intro__h2">Student, UI Designer & Web Developer</h2>
             <h3 class="profile-intro__h3">Diving into the dynamic realm of UI design and web development, I craft visually captivating digital experiences, seamlessly fusing creativity with cutting-edge technology. Join the journey!</h3>
             <div class="profile-intro__intro-buttons">
-                <a class="btn btn--connect" href="#connect-directly">Connect</a>
-                <a class="btn btn--my-portfolio" href="#my-portfolio">My Portfolio</a>
+                <button class="btn btn--connect">Connect</button>
+                <button class="btn btn--my-portfolio">My Portfolio</button>
             </div>
         </section>
         <section class="my-biography main__section">
@@ -172,5 +183,6 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

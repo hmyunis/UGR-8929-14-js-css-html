@@ -18,6 +18,8 @@
     --color-nine: #008000;
     --color-ten: #ffffff;
     --color-eleven: #00ced1;
+    --color-twelve: #407373de;
+    --color-thirteen: #00ff7f;
 }
 * {
     font-family: Poppins;
@@ -31,6 +33,7 @@
 /* ------------- Pseudo Classes ------------ */
 a:hover {
     font-size: larger;
+    transition: 0.2s;
 }
 a:focus,
 a:active {
@@ -43,7 +46,7 @@ a {
 img {
     max-width: 100%;
 }
-/* ------------ Reusable Components ----------- */
+/* ------------ General Elements ----------- */
 .btn {
     background-color: var(--color-four);
     padding: 0.5em;
@@ -77,6 +80,8 @@ img {
     width: 24rem;
     height: 18rem;
     margin-bottom: 1rem;
+    animation: card-slide;
+    animation-duration: 2s;
 }
 .card-icon {
     width: 5rem;
@@ -92,11 +97,36 @@ img {
     width: 1.5rem;
 }
 /* ----------------------------------- */
+/* ---------------- Animations ------------------- */
+.fadeIn:not(.profile-intro) {
+    animation-name: fadeIn;
+    animation-duration: 700ms;
+    animation-timing-function: linear;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: blur(2px);
+        transform: translateY(2%);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+@keyframes card-slide {
+    from {
+        transform: scale(90%);
+    }
+}
+
+/* ----------------------------------- */
 /* ========== Header ============= */
 .header {
     position: sticky;
     top: 0;
-    background-color: rgba(64, 115, 115, 0.87);
+    background-color: var(--color-twelve);
 }
 .header__container {
     color: var(--color-ten);
@@ -124,6 +154,31 @@ img {
     display: none;
     width: 2.5rem;
 }
+.header__menu-icon:hover {
+    width: 2.9rem;
+}
+.header__nav--mobile {
+    background-color: var(--color-twelve);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: fit-content;
+    transition: 1s;
+    text-align: center;
+}
+.nav__ul-item--mobile {
+    padding: 1rem;
+}
+.nav__ul-item--mobile:hover {
+    background-color: var(--color-seven);
+}
+.nav__ul-item--mobile-current {
+    color: var(--color-eleven);
+}
+.hidden {
+    display: none;
+}
 .header__nav--ul {
     display: flex;
     gap: 2rem;
@@ -141,7 +196,21 @@ img {
 #btn--hire-me {
     color: var(--color-one);
 }
-
+.header__scroll-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-twelve);
+    z-index: 10;
+}
+.scroll-progress {
+    height: 100%;
+    width: 0;
+    background-color: var(--color-eleven);
+    transition: width 0.1s;
+}
 /* ================================= */
 
 /* =============== Main ================== */
@@ -167,6 +236,8 @@ img {
 .profile-intro__avatar-img {
     margin-top: 2rem;
     width: 20%;
+    transition: all 2s;
+    transform: rotateY(360deg);
 }
 .profile-intro__intro-buttons {
     display: flex;
@@ -178,10 +249,23 @@ img {
 .btn--my-portfolio {
     background-color: var(--color-four);
     color: var(--color-nine);
-    border: 1px groove;
+    border: 1px solid var(--color-nine);
+    font-size: large;
     font-weight: bold;
     padding: 1rem;
     width: 20vw;
+}
+.btn--connect:hover,
+.btn--my-portfolio:hover,
+#btn--hire-me:hover,
+.socials-item:hover,
+.contact-form__submit:hover {
+    font-size: x-large;
+    transition: 0.3s;
+    background-color: var(--color-thirteen);
+    color: var(--color-nine);
+    border: 1px solid var(--color-four);
+    box-shadow: 1px 1px 15px var(--color-four);
 }
 /* ---------------------- */
 /* Section 2 - profile-intro */
@@ -596,6 +680,7 @@ img {
     border-radius: 0.3rem;
     height: 3rem;
     font-size: larger;
+    padding-left: 1rem;
 }
 .contact-form__phone-number-box {
     display: flex;
@@ -607,12 +692,14 @@ img {
 .contact-form__textarea {
     border-radius: 0.3rem;
     font-size: larger;
+    padding: 1rem;
 }
 .contact-form__submit {
     font-size: larger;
     width: 30%;
     padding: 1rem;
     align-self: center;
+    border: 1px solid var(--color-nine);
 }
 .contact__location-on-map {
     background-color: var(--color-five);
